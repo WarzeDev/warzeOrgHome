@@ -121,3 +121,9 @@ document.querySelectorAll('.thumb').forEach((thumbnail) => {
 		e.target.parentElement.replaceChild(iframe, e.target);
 	});
 });
+
+// Copy contents from <aside> to <footer>
+const footer = document.querySelector('footer');
+const aside = document.querySelector('aside');
+
+footer.innerHTML = aside.innerHTML;

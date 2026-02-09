@@ -43,13 +43,13 @@ p {
 	color: rgba(255, 255, 255, 0.7);
 }
 .post iframe, .post img {
-	width: clamp(240px, 80%, 460px);
+	width: clamp(140px, 80%, 460px);
 	aspect-ratio: 16 / 9;
 	border: none;
 	object-fit: cover;
 	border-radius: 10px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1050px) {
 	.post {
 		padding-left: 20px;
 	}

@@ -10,6 +10,7 @@
 #aboutme img {
 	max-width: 130px;
 	max-height: 396px;
+	margin-right: 8px;
 }
 #aboutme h1 {
 	text-align: center;
@@ -20,7 +21,7 @@
 #aboutme a {
 	color: var(--aboutme);
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1050px) {
 	#aboutme img {
 		display: none;
 	}

@@ -28,7 +28,7 @@
 		transform: translate(-5px, 5px);
 	}
 }
-@media screen  and (max-width: 800px) {
+@media screen  and (max-width: 1050px) {
 	#earthContainer {
 		display: none;
 	}
@@ -44,6 +44,7 @@
 	z-index: -3;
 	object-fit: cover;
 	transition: opacity 0.25s;
+	filter: blur(5px);
 }
 .currentBackground {
 	z-index: -1;

@@ -11,9 +11,9 @@
 		<link rel='stylesheet' type='text/css' href='/css/wartos.css'>
 		<link rel='stylesheet' type='text/css' href='/css/socials.css'>
 		<link rel='stylesheet' type='text/css' href='/css/aboutme.css'>
+		<link rel='stylesheet' type='text/css' href='/css/testimonials.css'>
 		<link rel='stylesheet' type='text/css' href='/css/post.css'>
 		<link rel='stylesheet' type='text/css' href='/css/games.css'>
-		<link rel='stylesheet' type='text/css' href='/css/newsletter.css'>
 
 		<meta name="title" content="Warze.org - Homepage of Leonhard Tissen">
 		<meta name="description" content="The homepage of Leonhard Tissen to showcase his development projects. Keep in touch with recent game releases, check out projects or contact Leonhard Tissen.">
@@ -62,6 +62,9 @@
 				<button class="roundedButton category" data-category="discordbots">
 					Discord Bots
 				</button>
+				<button class="roundedButton category" data-category="testimonials">
+					Testimonials
+				</button>
 				<button class="roundedButton category" data-category="aboutme">
 					About Me
 				</button>
@@ -87,6 +90,9 @@
 				<button class="category" data-category="discordbots">
 					Discord Bots
 				</button>
+				<button class="category" data-category="testimonials">
+					Testimonials
+				</button>
 				<button class="category" data-category="aboutme">
 					About Me
 				</button>
@@ -100,15 +106,28 @@
 			</h1>
 
 			<section id="news" class="hidden" style="opacity: 0">
-				<div id="newsletter">
-					<svg id="newsletterClose" width="12" height="12" viewBox="0 0 12 12">
-						<line x1="0" y1="0" x2="12" y2="12" stroke="white" stroke-width="2"></line>
-						<line x1="12" y1="0" x2="0" y2="12" stroke="white" stroke-width="2"></line>
-					</svg>
-					<h1>Subscribe to my newsletter</h1>
-					<p>Get notified about new projects, games and updates.</p>
-					<input type="email" id="newsletterEmail" placeholder="Enter your email">
-					<button id="newsletterSubscribe">Subscribe</button>
+				<div class="post">
+					<span class="timestamp">Jan 4, 2026</span>
+
+					<h1>Check out Plompy!</h1>
+					<p>I've been making lots of custom models for Minecraft using Blockbench in my own time and for clients.</p>
+					<p>Plompy is my first custom mob that works using <a href="https://modrinth.com/mod/entity-model-features/versions">EMF</a> and <a href="https://modrinth.com/mod/entitytexturefeatures">ETF</a> and based off a real bat-eared fox</p>
+					<p>I'm considering having a dedicated page to show off all of my models</p>
+					
+					<img src="/news/plompy.png" alt="Plompy the Fox, a custom model for Minecraft">
+				</div>
+
+				<div class="post">
+					<span class="timestamp">Apr 9, 2025</span>
+
+					<h1>My new Tool: BruteCraft</h1>
+					<p>BruteCraft is a helpful tool for <a href="https://wynncraft.com">WynnCraft</a> that helps with a pretty complicated system in the game: Crafting.</p>
+					<p>In WynnCraft, you can combine hundreds of different items to create gear and consumables with purposes ranging from combat, movement, survivability and more.</p>
+					<p>BruteCraft helps you figure out the best combination of items to yield the best result possible using a evolutionary algorithm.</p>
+
+					<p><a href="https://brutecraft.warze.org">Check it out now!</a> The code is also available on <a href="https://git.warze.org/Warze/brutecraft">my Gitea instance</a>.</p>
+					
+					<img src="/news/brutecraft.png" alt="BruteCraft">
 				</div>
 
 				<div class="post">
@@ -396,18 +415,80 @@
 					</a>
 				</div>
 			</section>
+			
+			<section id="testimonials" class="hidden" style="opacity: 0">
+				<p id="testimonialheader">Want to be featured here? Write a message on <a href="https://kofi.warze.org">Ko-fi</a>, <a href="https://linkedin.warze.org">LinkedIn</a> or <a href="https://discord.warze.org">Discord</a>.</p>
+				
+				<div class="testimonial">
+					<a href="https://linkedin.com/in/eriksombroek"></a>
+						<img class="avatar" src="/testimonials/eriksombroek.jpg">
+					</a>
+					<div>
+						<a href="https://linkedin.com/in/eriksombroek">
+							<p class="name">Erik Sombroek</p>
+						</a>
+						<p>I had the pleasure of working with Leonhard Tissen on our project, <a href="https://jollyworld.app">JollyWorld</a>, and I am thrilled to recommend him for his exceptional skills and contributions. Leonhard played a crucial role in the development of our game, showcasing not only his profound expertise in JavaScript but also his exceptional problem-solving abilities.<br><br>His proactive approach and creative thinking were instrumental in building several key utilities for JollyWorld. These tools not only enhanced our game's functionality but also significantly improved the overall user experience. His dedication to excellence was evident in every task he undertook.<br><br>One of Leonhard's most notable contributions was the enhancement of our game's modding section. His innovative solutions and technical proficiency brought new dimensions to this aspect of the game, greatly appreciated by both the team and the user community.<br><br>Beyond his technical abilities, Leonhard is a fantastic team member. His positive attitude and collaborative spirit make him a great asset to any team. His willingness to share knowledge and support his colleagues is commendable and fosters a productive and enjoyable work environment.<br><br>I wholeheartedly endorse Leonhard for his JavaScript expertise, proactive nature, creative problem-solving, and overall being a fantastic colleague. Any team would be fortunate to have him.</p>
+					</div>
+				</div>
+				<div class="testimonial">
+					<a href="https://www.linkedin.com/in/laibatariq13/">
+						<img class="avatar" src="/testimonials/laibatariq.jpg">
+					</a>
+					<div>
+						<a href="https://www.linkedin.com/in/laibatariq13/">
+							<p class="name">Laiba Tariq</p>
+						</a>
+						<p>Leonhard is a highly creative individual with a vast skill set, going above and beyond to ensure the final result comes out as close to your original idea as possible.<br><br>Leonhard designed and set up <a href="https://laiba.warze.org">my portfolio website</a> for me and I had an optimized and perfect version on my hand within days! It even had an easy code for me to update my work on my own without needing any additional hands on deck.<br><br>I highly recommend him to anyone looking for a developer who knows everything under the sun, it was a great experience!</p>
+					</div>
+				</div>
+				<a class="testimonial" href="https://ko-fi.com/sadobunny">
+					<img class="avatar" src="/testimonials/sadobunny.webp">
+					<div>
+						<p class="name">sadobunny</p>
+						<p>You're super awesome and cool. I love my stupid chungus developer 🩵 TAKE MY MONEY</p>
+					</div>
+				</a>
+				<a class="testimonial" href="https://ko-fi.com/julppuu">
+					<img class="avatar" src="/testimonials/julppuu.webp">
+					<div>
+						<p class="name">Julppuu</p>
+						<p>Thank you for the cool mods, now take my money &gt;:(</p>
+					</div>
+				</a>
+				<a class="testimonial" href="https://ko-fi.com/everwinter">
+					<img class="avatar" src="/testimonials/everwintre.webp">
+					<div>
+						<p class="name">Everwintre</p>
+						<p>keep up the good work</p>
+					</div>
+				</a>
+				<a class="testimonial" href="https://ko-fi.com/supergoldenmario">
+					<img class="avatar" src="/testimonials/supergoldenmario.webp">
+					<div>
+						<p class="name">SuperGoldenMario</p>
+						<p>Take my money funny dev man</p>
+					</div>
+				</a>
+				<a class="testimonial" href="https://ko-fi.com/W7W51O3W0N">
+					<img class="avatar" src="/testimonials/nekomataokayun.png">
+					<div>
+						<p class="name">Nekomata Okayun</p>
+						<p>The greatest dev that's ever lived</p>
+					</div>
+				</a>
+
+			</section>
 
 			<section id="aboutme" class="hidden" style="opacity: 0">
 				<img src="/about/leo2_zoom_normal_500px-removebg-preview_small.png" alt="Leonhard Tissen">
 				<div class="text">
-					<p>Hi, I'm <b>Leonhard Tissen</b>, a <b>software developer</b> from Germany.</p>
-					<p>I have over 7 years of experience making <b>games</b>, <b>websites</b> and <b>tools</b> for the web.</p>
-					<p>I've worked on numerous projects to bring quality applications out there, most of which you can view right here, on this website.</p>
+					<p>Hi, I'm <b>Leo</b>, a <b>software developer</b> from Germany.</p>
+					<p>I have over 8 years of experience making <b>games</b>, <b>websites</b>, <b>art</b>, <b>3D models</b> and <b>automation tools</b> for the web.</p>
+					<p>I've worked on numerous projects to bring quality applications out there, a lot of which you can view right here, on this website.</p>
 					<p>I love making an impact on the web and love helping others to learn coding as it provides a great way to express creativity and solve everyday problems. My greatest passion is to create and share my knowledge with others.</p>
+					<p>If you're convinced in any of my skills, feel free to commission me! I can be contacted on any of my socials or via <a href="mailto:contact@warze.org">email</a>.</p>
 					<p>
 						<a href="mailto:contact@warze.org">contact@warze.org</a>
-						•
-						<a href="https://leonhard.warze.org">Portfolio</a>
 					</p>
 				</div>
 			</section>
@@ -463,6 +544,9 @@
 			</a>
 		</aside>
 
+		<!-- Footer -->
+		<footer></footer>
+
 		<!-- Decoration -->
 		<canvas id='stars'></canvas>
 
@@ -478,11 +562,12 @@
 		</div>
 
 		<!-- Backgrounds -->
-		<img src="/earth/bgblue.jpg" class="background" id="bgblue">
-		<img src="/earth/bgpurple.jpg" class="background" id="bgpurple">
-		<img src="/earth/bgpink.jpg" class="background" id="bgpink">
-		<img src="/earth/bgred.jpg" class="background currentBackground" id="bgred">
-		<img src="/earth/bggreen.jpg" class="background" id="bggreen">
+		<img src="/backgrounds/bgblue.jpg" class="background" id="bgblue">
+		<img src="/backgrounds/bgpurple.jpg" class="background" id="bgpurple">
+		<img src="/backgrounds/bgpink.jpg" class="background" id="bgpink">
+		<img src="/backgrounds/bgred.jpg" class="background currentBackground" id="bgred">
+		<img src="/backgrounds/bggreen.jpg" class="background" id="bggreen">
+		<img src="/backgrounds/bgaqua.jpg" class="background" id="bgaqua">
 
 		<!-- Scripts -->
 		<script src='/js/categories.js'></script>
@@ -490,6 +575,5 @@
 		<script src='/js/title.js'></script>
 		<script src='/js/nav.js'></script>
 		<script src='/js/index.js'></script>
-		<script src='/js/newsletter.js'></script>
 	</body>
 </html>

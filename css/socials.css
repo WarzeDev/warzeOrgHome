@@ -15,10 +15,10 @@ aside img {
 	width: 32px;
 	transition: transform 0.3s;
 }
-aside a {
+aside a, footer a {
 	position: relative;
 }
-aside p {
+aside p, footer p {
 	position: absolute;
 	left: 0px;
 	top: 0px;
@@ -34,15 +34,54 @@ aside img:hover + p {
 	opacity: 1;
 	transform: translateX(40px);
 }
-aside img:hover {
+aside img:hover, footer img:hover {
 	transform: scale(1.2);
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
 	aside {
 		display: none !important;
 	}
 	main {
 		left: 10px;
 		width: calc(100% - 20px);
+	}
+}
+footer {
+	position: fixed;
+	bottom: 0px;
+	right: 0;
+	padding-block: 12px;
+	display: none;
+	gap: 4px;
+	text-decoration: none;
+	width: 100%;
+	justify-content: right;
+	padding-right: 20px;
+	background: linear-gradient(0deg, #000000, #00000000);
+
+	img {
+		width: 48px;
+		margin-right: 8px;
+		transition: transform 0.3s;
+		filter: drop-shadow(0 0 4px #000000);
+	}
+
+	a p {
+		opacity: 0;
+	}
+}
+@media screen and (max-width: 600px) {
+	footer {
+		display: flex;
+	}
+}
+@media screen and (max-width: 450px) {
+	footer img {
+		width: 36px;
+	}
+}
+@media screen and (max-width: 400px) {
+	footer img {
+		width: 32px;
 	}
 }

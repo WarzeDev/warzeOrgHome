@@ -79,7 +79,7 @@ main {
 	height: calc(100% - 130px);
 	overflow-y: auto;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1050px) {
 	main {
 		left: 60px;
 		width: calc(100% - 70px);
@@ -97,6 +97,11 @@ section {
 section.hidden {
 	display: none !important;
 	pointer-events: none;
+}
+@media screen and (max-width: 600px) {
+	section {
+		padding-bottom: 100px;
+	}
 }
 
 

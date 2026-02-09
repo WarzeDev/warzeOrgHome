@@ -23,6 +23,12 @@ const categories = {
 		title: 'Discord Bots',
 		background: 'green',
 	},
+	testimonials: {
+		hueShift: -40,
+		color: '#44fff3',
+		title: 'Testimonials',
+		background: 'aqua',
+	},
 	aboutme: {
 		hueShift: 0,
 		color: '#449eff',
