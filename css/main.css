@@ -1,13 +1,13 @@
 :root {
 	--highlight: #449eff;
 	--newspost: #ff38a5;
-	--aboutme: #449eff;
+	--bio: #449eff;
 	--botpost: #26C819;
 }
 
 @font-face {
 	font-family: Geist, sans-serif;
-	src: url('/static/fonts/GeistVF.woff2') format("woff2");
+	src: url('/fonts/Geist-Regular.woff2') format("woff2");
 }
 * {
 	box-sizing: border-box;
@@ -79,7 +79,7 @@ main {
 	height: calc(100% - 130px);
 	overflow-y: auto;
 }
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1150px) {
 	main {
 		left: 60px;
 		width: calc(100% - 70px);

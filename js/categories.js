@@ -29,10 +29,16 @@ const categories = {
 		title: 'Testimonials',
 		background: 'aqua',
 	},
-	aboutme: {
+	bio: {
 		hueShift: 0,
 		color: '#449eff',
-		title: 'About Me',
+		title: 'Bio',
 		background: 'blue',
+	},
+	gallery: {
+		hueShift: 60,
+		color: '#752bff',
+		title: 'Gallery',
+		background: 'magenta',
 	}
 }

@@ -1,0 +1,25 @@
+document.querySelectorAll('img[data-full]').forEach(img => {
+  img.addEventListener('click', e => {
+    e.preventDefault();
+
+    const full = img.dataset.full;
+
+    const container = document.createElement('div');
+    const fullImg = document.createElement('img');
+    fullImg.src = full;
+    container.appendChild(fullImg);
+    document.body.appendChild(container);
+
+    const viewer = new Viewer(container, {
+      navbar: false,
+      toolbar: false,
+      title: false,
+      hidden() {
+        viewer.destroy();
+        container.remove();
+      }
+    });
+
+    viewer.show();
+  });
+});

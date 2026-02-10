@@ -49,7 +49,7 @@ p {
 	object-fit: cover;
 	border-radius: 10px;
 }
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1150px) {
 	.post {
 		padding-left: 20px;
 	}

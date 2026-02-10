@@ -28,7 +28,7 @@
 		transform: translate(-5px, 5px);
 	}
 }
-@media screen  and (max-width: 1050px) {
+@media screen  and (max-width: 1150px) {
 	#earthContainer {
 		display: none;
 	}

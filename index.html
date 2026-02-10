@@ -10,10 +10,14 @@
 		<link rel='stylesheet' type='text/css' href='/css/nav.css'>
 		<link rel='stylesheet' type='text/css' href='/css/wartos.css'>
 		<link rel='stylesheet' type='text/css' href='/css/socials.css'>
-		<link rel='stylesheet' type='text/css' href='/css/aboutme.css'>
 		<link rel='stylesheet' type='text/css' href='/css/testimonials.css'>
+		<link rel='stylesheet' type='text/css' href='/css/bio.css'>
+		<link rel='stylesheet' type='text/css' href='/css/gallery.css'>
 		<link rel='stylesheet' type='text/css' href='/css/post.css'>
 		<link rel='stylesheet' type='text/css' href='/css/games.css'>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.7/viewer.min.js" integrity="sha512-lZD0JiwhtP4UkFD1mc96NiTZ14L7MjyX5Khk8PMxJszXMLvu7kjq1sp4bb0tcL6MY+/4sIuiUxubOqoueHrW4w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.7/viewer.min.css" integrity="sha512-vRbASHFS0JiM4xwX/iqr9mrD/pXGnOP2CLdmXSSNAjLdgQVFyt4qI+BIoUW7/81uSuKRj0cWv3Dov8vVQOTHLw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 		<meta name="title" content="Warze.org - Homepage of Leonhard Tissen">
 		<meta name="description" content="The homepage of Leonhard Tissen to showcase his development projects. Keep in touch with recent game releases, check out projects or contact Leonhard Tissen.">
@@ -65,8 +69,11 @@
 				<button class="roundedButton category" data-category="testimonials">
 					Testimonials
 				</button>
-				<button class="roundedButton category" data-category="aboutme">
-					About Me
+				<button class="roundedButton category" data-category="bio">
+					Bio
+				</button>
+				<button class="roundedButton category" data-category="gallery">
+					Gallery
 				</button>
 			</nav>
 			<div id="navUnderline"></div>
@@ -93,8 +100,11 @@
 				<button class="category" data-category="testimonials">
 					Testimonials
 				</button>
-				<button class="category" data-category="aboutme">
-					About Me
+				<button class="category" data-category="bio">
+					Bio
+				</button>
+				<button class="category" data-category="gallery">
+					Gallery
 				</button>
 			</div>
 		</div>
@@ -479,8 +489,9 @@
 
 			</section>
 
-			<section id="aboutme" class="hidden" style="opacity: 0">
-				<img src="/about/leo2_zoom_normal_500px-removebg-preview_small.png" alt="Leonhard Tissen">
+			<section id="bio" class="hidden" style="opacity: 0">
+				<img id="bioImgLarge" src="/about/leo2_zoom_normal_500px-removebg-preview_small.png" alt="Leonhard Tissen">
+				<img id="bioImgSmall" src="/about/leo2_zoom_normal_500px.png" alt="Leonhard Tissen">
 				<div class="text">
 					<p>Hi, I'm <b>Leo</b>, a <b>software developer</b> from Germany.</p>
 					<p>I have over 8 years of experience making <b>games</b>, <b>websites</b>, <b>art</b>, <b>3D models</b> and <b>automation tools</b> for the web.</p>
@@ -490,6 +501,105 @@
 					<p>
 						<a href="mailto:contact@warze.org">contact@warze.org</a>
 					</p>
+				</div>
+			</section>
+
+			<section id="gallery" class="hidden" style="opacity: 0">
+				<p>Over the years, I've received many pieces of art of my character and I felt I needed to show them off. Please check out their respective artists!</p>
+				<div class="artist">
+					<div class="header">
+						<h1>sadodeer (Tinee)</h1>
+						<a href="https://www.instagram.com/notacoff33addict" target="_blank"></a>
+							<img src="/icons/instagram.svg" alt="Follow sadodeer on Instagram">
+						</a>
+					</div>
+					<p>My significant other and talented artist. Highly recommend checking out their art!</p>
+					<div class="art">
+						<img src="/gallery/sadodeer/r/warzesadodeer1.jpg" data-full="/gallery/sadodeer/warzesadodeer1.png">
+						<img src="/gallery/sadodeer/r/warzesadodeer2.jpg" data-full="/gallery/sadodeer/warzesadodeer2.jpg">
+						<img src="/gallery/sadodeer/r/warzesadodeer3.jpg" data-full="/gallery/sadodeer/warzesadodeer3.jpg">
+						<img src="/gallery/sadodeer/r/warzesadodeerpngtuber.jpg" data-full="/gallery/sadodeer/warzepngtuber1.png">
+						<img src="/gallery/sadodeer/r/warzesadodeerbed.jpg" data-full="/gallery/sadodeer/warzesadodeerbed.jpg">
+						<img src="/gallery/sadodeer/r/warzesadodeermatch1.jpg" data-full="/gallery/sadodeer/warzesadodeermatch1.jpg">
+						<img src="/gallery/sadodeer/r/warzesadodeermatch4.jpg" data-full="/gallery/sadodeer/warzesadodeermatch4.jpg">
+						<img src="/gallery/sadodeer/r/warzesadodeerclingy.jpg" data-full="/gallery/sadodeer/warzesadodeerclingy.jpg">
+					</div>
+				</div>
+				<div class="artist">
+					<div class="header">
+						<h1>sadobunny (Ghost)</h1>
+						<a href="https://bsky.app/profile/did:plc:ffmhxkamcmyfqoqw2g4j5bf3" target="_blank"></a>
+							<img src="/icons/bluesky.svg" alt="Follow sadobunny on Bluesky">
+						</a>
+					</div>
+					<p>Highly talented and dedicated artist and good friend with a love for good color and lighting. Consider commissioning them!</p>
+					<div class="art">
+						<img src="/gallery/sadobunny/r/WarzeDiscordBannerGhost.jpg" data-full="/gallery/sadobunny/WarzeDiscordBannerGhost.png">
+						<img src="/gallery/sadobunny/r/warzeghostbirthday.jpg" data-full="/gallery/sadobunny/warzeghostbirthday.png">
+						<img src="/gallery/sadobunny/r/warzesummer.jpg" data-full="/gallery/sadobunny/warzesummer.png">
+						<img src="/gallery/sadobunny/r/warzesadobunnywinter.jpg" data-full="/gallery/sadobunny/warzesadobunnywinter.png">
+						<img src="/gallery/sadobunny/r/warzeheart.jpg" data-full="/gallery/sadobunny/warzeheart.png">
+						<img src="/gallery/sadobunny/r/warzebackrooms.jpg" data-full="/gallery/sadobunny/warzebackrooms.png">
+						<img src="/gallery/sadobunny/r/warzesadobunnypfp.jpg" data-full="/gallery/sadobunny/warzesadobunnypfp.png">
+						<img src="/gallery/sadobunny/r/warzemcskin.jpg" data-full="/gallery/sadobunny/warzemcskin.png">
+					</div>
+				</div>
+				<div class="artist">
+					<div class="header">
+						<h1>Amorrya</h1>
+					</div>
+					<p>Incredibly talented professional artist and generous person.</p>
+					<div class="art">
+						<img src="/gallery/amorrya/r/warzefurry.jpg" data-full="/gallery/amorrya/warzefurry.png">
+						<img src="/gallery/amorrya/r/warzeamonbar.jpg" data-full="/gallery/amorrya/warzeamonbar.png">
+					</div>
+				</div>
+				<div class="artist">
+					<div class="header">
+						<h1>Avtraxi</h1>
+						<a href="https://x.com/Avtraxi">
+							<img src="/icons/x.svg" alt="Follow Avtraxi on X">
+						</a>
+					</div>
+					<p>Insanely skilled artist whose art I can highly recommend checking out!</p>
+					<div class="art">
+						<img src="/gallery/rax/r/raid.jpg" data-full="/gallery/rax/raid.png">
+						<img src="/gallery/rax/r/warze_burning_rose_lol.jpg" data-full="/gallery/rax/warze_burning_rose_lol.png">
+					</div>
+				</div>
+				<div class="artist">
+					<div class="header">
+						<h1>hooch</h1>
+						<a href="https://store.steampowered.com/app/3229520/Berry_Berry_Festival/">
+							<img src="/icons/steam.svg" alt="Buy Berry Berry Festival on Steam">
+						</a>
+					</div>
+					<p>Very talented artist and game developer with a love for character design. Highly recommend checking out their game <b>Berry Berry Festival</b> on Steam!</p>
+					<div class="art">
+						<img src="/gallery/hooch/r/warzecoat.jpg" data-full="/gallery/hooch/warzecoat.png">
+						<img src="/gallery/hooch/r/warzegardening.jpg" data-full="/gallery/hooch/warzegardening.png">
+						<img src="/gallery/hooch/r/warzette.jpg" data-full="/gallery/hooch/warzette.png">
+						<img src="/gallery/hooch/r/warzestore.jpg" data-full="/gallery/hooch/warzestore.png">
+						<img src="/gallery/hooch/r/warzewater.jpg" data-full="/gallery/hooch/warzewater.png">
+						<img src="/gallery/hooch/r/warzespongebob.jpg" data-full="warzespongebob.png">
+					</div>
+				</div>
+				<div class="artist">
+					<div class="header">
+						<h1>dotSepia</h1>
+						<div>
+							<a href="https://github.com/dotSepia" target="_blank">
+								<img src="/icons/github.png" alt="Follow dotSepia on GitHub">
+							</a>
+							<a href="https://x.com/dotSepia" target="_blank">
+								<img src="/icons/x.svg" alt="Follow dotSepia on X">
+							</a>
+						</div>
+					</div>
+					<p>Very talented artist and knowledgeable technical person. Check them out!</p>
+					<div class="art">
+						<img src="/gallery/dotsepia/warzedotsepia3d.png">
+					</div>
 				</div>
 			</section>
 
@@ -568,6 +678,7 @@
 		<img src="/backgrounds/bgred.jpg" class="background currentBackground" id="bgred">
 		<img src="/backgrounds/bggreen.jpg" class="background" id="bggreen">
 		<img src="/backgrounds/bgaqua.jpg" class="background" id="bgaqua">
+		<img src="/backgrounds/bgmagenta.jpg" class="background" id="bgmagenta">
 
 		<!-- Scripts -->
 		<script src='/js/categories.js'></script>
@@ -575,5 +686,6 @@
 		<script src='/js/title.js'></script>
 		<script src='/js/nav.js'></script>
 		<script src='/js/index.js'></script>
+		<script src='/js/gallery.js'></script>
 	</body>
 </html>
