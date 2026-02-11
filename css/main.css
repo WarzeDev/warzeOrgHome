@@ -6,14 +6,22 @@
 }
 
 @font-face {
-	font-family: Geist, sans-serif;
+	font-family: "Geist";
 	src: url('/fonts/Geist-Regular.woff2') format("woff2");
+	font-weight: 400;
+}
+@font-face {
+	font-family: "Geist";
+	src: url('/fonts/Geist-Bold.woff2') format("woff2");
+	font-weight: 700;
 }
 * {
 	box-sizing: border-box;
-	font-family: Geist;
-	font-weight: 900;
+	font-family: "Geist", sans-serif;
 	color: white;
+}
+h1, h2 {
+	font-weight: 700;
 }
 /* Chrome */
 ::-webkit-scrollbar {
@@ -116,6 +124,7 @@ section.hidden {
 	margin-inline: 6px;
 	cursor: pointer;
 	transition: border-color 0.3s, letter-spacing 0.5s, color 0.3s;
+	font-weight: 700;
 }
 .roundedButton#selectedCategory {
 	letter-spacing: 1.2px;
