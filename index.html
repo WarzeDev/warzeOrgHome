@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset='utf-8'>
 		<meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -680,7 +680,7 @@
 						<svg width="22" height="22" viewBox="0 0 4 4" id="warzeOrgLogo">
 							<mask id="glasses2">
 								<rect x="0" y="0" width="4" height="4" fill="white"></rect>
-								<path d="M 0 2 A 1 1,2 0, 0, 0, 2 2 L 1 2 Z" fill="black"></path>
+								<path d="M 0 2 A 1 1, 0, 0, 0, 2 2 L 1 2 Z" fill="black"></path>
 								<path d="M 2 2 A 1 1, 0, 0, 0, 4 2 L 1 2 Z" fill="black"></path>
 							</mask>
 							<circle cx="2" cy="2" r="2" mask="url(#glasses2)" fill="white"></circle>
@@ -693,6 +693,10 @@
 
 		<!-- Social media -->
 		<aside>
+			<a href="https://git.warze.org/Warze" target="_blank">
+				<img src="/icons/gitea.webp" alt="Gitea">
+				<p>View my Gitea Instance</p>
+			</a>
 			<a href="https://github.warze.org/" target="_blank">
 				<img src="/icons/github.webp" alt="GitHub">
 				<p>View my GitHub</p>
@@ -729,16 +733,7 @@
 		<!-- Decoration -->
 		<canvas id='stars'></canvas>
 
-		<div id="earthContainer">
-			<video autoplay muted loop id='earth'>
-				<source src='/earth/earthcropsmall.mp4' type='video/mp4'>
-			</video>
-
-			<svg width="256" height="256" viewBox="0 0 4 4" id="earthSunglasses">
-				<path d="M 0 2 A 1 1, 0, 0, 0, 2 2 L 1 2 Z" fill="black"></path>
-				<path d="M 2 2 A 1 1, 0, 0, 0, 4 2 L 1 2 Z" fill="black"></path>
-			</svg>
-		</div>
+		<div id="earthContainer"></div>
 
 		<!-- Backgrounds -->
 		<img src="/backgrounds/bgblue.jpg" class="background" id="bgblue">

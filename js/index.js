@@ -1,6 +1,5 @@
 const background = document.getElementById('background');
 const earth = document.getElementById('earthContainer');
-const earthSunglasses = document.getElementById('earthSunglasses');
 
 const underline = document.getElementById('navUnderline');
 
@@ -54,11 +53,13 @@ function selectCategory(category) {
 	currentCategory = category;
 
 	if (category === 'wartos') {
-		earthSunglasses.style.opacity = 1;
 		earth.style.filter = `sepia(1) brightness(0.7) saturate(10.5) hue-rotate(-32deg)`;
 	} else {
-		earthSunglasses.style.opacity = 0;
 		earth.style.filter = `hue-rotate(${hueShift}deg)`;
+	}
+	const earthSunglasses = document.getElementById('earthSunglasses');
+	if (earthSunglasses) {
+		earthSunglasses.style.opacity = category === 'wartos' ? 1 : 0;
 	}
 }
 
@@ -127,3 +128,16 @@ const footer = document.querySelector('footer');
 const aside = document.querySelector('aside');
 
 footer.innerHTML = aside.innerHTML;
+
+// Load earth video
+window.addEventListener('load', () => {
+	const earthParent = document.getElementById('earthContainer');
+	earthParent.innerHTML = `
+	<video autoplay muted loop id="earth" preload="none">
+		<source src="/earth/earthcropsmall.mp4" type="video/mp4">
+	</video>
+	<svg width="256" height="256" viewBox="0 0 4 4" id="earthSunglasses">
+		<path d="M 0 2 A 1 1, 0, 0, 0, 2 2 L 1 2 Z" fill="black"></path>
+		<path d="M 2 2 A 1 1, 0, 0, 0, 4 2 L 1 2 Z" fill="black"></path>
+	</svg>`;
+});

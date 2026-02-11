@@ -75,13 +75,13 @@ footer {
 		display: flex;
 	}
 }
-@media screen and (max-width: 450px) {
-	footer img {
-		width: 36px;
+@media screen and (max-width: 500px) {
+	footer {
+		justify-content: space-evenly;
+		padding-right: 0;
 	}
-}
-@media screen and (max-width: 400px) {
 	footer img {
-		width: 32px;
+		width: 9vw;
+		margin-right: 0;
 	}
 }
