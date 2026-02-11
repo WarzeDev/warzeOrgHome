@@ -75,6 +75,7 @@ nav {
 
 .category {
 	transition: all 0.3s;
+	font-weight: 700;
 }
 #navBarDesktop .selectedCategory {
 	opacity: 0.7;
