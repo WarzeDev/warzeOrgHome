@@ -130,3 +130,21 @@ section.hidden {
 .roundedButton:hover {
 	border-color: rgba(255, 255, 255, 0.8);
 }
+@media screen and (max-width: 1150px) {
+	main {
+		#title {
+			position: fixed;
+			transform: translate(24px, -55px);
+		}
+		section {
+			transform: translateY(-50px);
+		}
+	}
+}
+@media screen and (max-width: 600px) {
+	main {
+		#title {
+			transform: translate(74px, -55px);
+		}
+	}
+}
