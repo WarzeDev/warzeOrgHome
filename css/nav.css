@@ -13,6 +13,7 @@ nav {
 	transition: width 0.3s ease-out, left 0.3s ease-out;
 	border-radius: 2px;
 	z-index: 2;
+	box-shadow: 0px 0px 4px 1px var(--highlight);
 }
 #navBarMobile {
 	display: none;
@@ -23,6 +24,10 @@ nav {
 	top: 20px;
 	left: 20px;
 	cursor: pointer;
+
+	svg {
+		pointer-events: none;
+	}
 }
 @media screen and (max-width: 1150px) {
 	#navBarDesktop {
@@ -66,4 +71,15 @@ nav {
 	top: -100px;
 	opacity: 0;
 	pointer-events: none;
+}
+
+.category {
+	transition: all 0.3s;
+}
+.selectedCategory {
+	opacity: 0.7;
+	pointer-events: none;
+	transform: translateY(-5px) scale(0.95);
+	box-shadow: inset 0 0 10px 5px rgba(0, 0, 0, 0.5), 0px 4px 5px rgba(0, 0, 0, 0.4);
+	color: var(--highlight);
 }

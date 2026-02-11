@@ -37,7 +37,7 @@ const categories = {
 	},
 	gallery: {
 		hueShift: 60,
-		color: '#752bff',
+		color: '#965dff',
 		title: 'Gallery',
 		background: 'magenta',
 	}

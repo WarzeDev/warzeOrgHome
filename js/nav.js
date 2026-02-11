@@ -13,3 +13,9 @@ function hideMobileNavBarDrawer() {
 navBarLauncher.addEventListener('click', () => {
 	showMobileNavBarDrawer();
 });
+
+document.addEventListener('click', (event) => {
+	if (!['navBarDrawer', 'navBarLauncher'].includes(event.target.id)) {
+		hideMobileNavBarDrawer();
+	}
+});
