@@ -5,13 +5,13 @@ function clearCanvases() {
 function initializeStars() {
 	clearCanvases();
 
-	const starCount = Math.floor((window.innerWidth * window.innerHeight) / 6000);
+	const starCount = Math.floor((window.innerWidth * window.innerHeight) / 5000);
 
 	for (let ci = 0; ci < 5; ci ++) {
 		const cvs = document.createElement('canvas');
 		cvs.classList.add('stars');
-		cvs.width = window.innerWidth + 100;
-		cvs.height = window.innerHeight + 100;
+		cvs.width = window.innerWidth + 150;
+		cvs.height = window.innerHeight + 150;
 		const ctx = cvs.getContext('2d');
 		ctx.fillStyle = `white`;
 		ctx.globalAlpha = (0.2 + ci / 10) * Math.random();
@@ -35,7 +35,7 @@ function setBackground(category) {
 	previousBackground.style.opacity = 0;
 
 	document.querySelectorAll('.stars').forEach((cvs) => {
-		const multiplier = cvs.getAttribute('data-stars-id') / 5;
+		const multiplier = cvs.getAttribute('data-stars-id') / 1.2 + 0.2;
 		const x = stars[0] * multiplier;
 		const y = stars[1] * multiplier;
 		cvs.style.transform = `translateY(-${y}px) translateX(-${x}px)`;
