@@ -3,13 +3,10 @@ const earth = document.getElementById('earthContainer');
 
 const underline = document.getElementById('navUnderline');
 
-let currentCategory = 'wartos';
+let currentCategory = 'home';
 let lastCategorySelection = 0;
 
 function resize() {
-	cvs.width = window.innerWidth;
-	cvs.height = window.innerHeight;
-
 	initializeStars();
 }
 
@@ -52,14 +49,10 @@ function selectCategory(category) {
 	setTitle(category);
 	currentCategory = category;
 
-	if (category === 'wartos') {
+	if (category === 'home') {
 		earth.style.filter = `sepia(1) brightness(0.7) saturate(10.5) hue-rotate(-32deg)`;
 	} else {
 		earth.style.filter = `hue-rotate(${hueShift}deg)`;
-	}
-	const earthSunglasses = document.getElementById('earthSunglasses');
-	if (earthSunglasses) {
-		earthSunglasses.style.opacity = category === 'wartos' ? 1 : 0;
 	}
 }
 
@@ -79,7 +72,7 @@ function moveUnderlineToElement() {
 document.querySelectorAll('.category').forEach((category) => {
 	category.addEventListener('click', (e) => {
 		const now = performance.now();
-		if (now < lastCategorySelection + 300) return;
+		if (now < lastCategorySelection + 550) return;
 		lastCategorySelection = now;
 
 		document.querySelectorAll('.selectedCategory').forEach((category) => {
@@ -129,15 +122,20 @@ const aside = document.querySelector('aside');
 
 footer.innerHTML = aside.innerHTML;
 
-// Load earth video
-window.addEventListener('load', () => {
-	const earthParent = document.getElementById('earthContainer');
-	earthParent.innerHTML = `
+function loadEarthVideo() {
+	const earthContainer = document.getElementById('earthContainer');
+	earthContainer.style.display = 'block';
+	earthContainer.innerHTML = `
 	<video autoplay muted loop id="earth" preload="none">
-		<source src="/earth/earthcropsmall.mp4" type="video/mp4">
+		<source src="/earth/earthcropsmallfast.mp4" type="video/mp4">
 	</video>
 	<svg width="256" height="256" viewBox="0 0 4 4" id="earthSunglasses">
 		<path d="M 0 2 A 1 1, 0, 0, 0, 2 2 L 1 2 Z" fill="black"></path>
 		<path d="M 2 2 A 1 1, 0, 0, 0, 4 2 L 1 2 Z" fill="black"></path>
 	</svg>`;
-});
+	const video = document.getElementById('earth');
+	video.playbackRate = 0.5;
+}
+
+// Load earth video
+window.addEventListener('load', loadEarthVideo);

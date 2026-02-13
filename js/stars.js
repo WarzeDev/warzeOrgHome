@@ -1,85 +1,46 @@
-const stars = [];
-
-const cvs = document.getElementById('stars');
-const ctx = cvs.getContext('2d');
-
-class Star {
-	constructor() {
-		this.x = Math.random() * cvs.width;
-		this.y = Math.random() * cvs.height;
-		this.size = Math.random() * 1 + 1;
-		this.xvel = (Math.random() - 0.5) * 0.2;
-		this.yvel = (Math.random() - 0.5) * 0.2;
-		const r = 225 + Math.random() * 30;
-		const g = 225 + Math.random() * 30;
-		const b = 225 + Math.random() * 30;
-		const alpha = Math.random();
-		this.alpha = alpha;
-		this.color = `rgba(${r}, ${g}, ${b}, ${alpha})`;
-	}
-
-	draw() {
-		ctx.beginPath();
-		ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-		//ctx.fillStyle = this.color;
-		ctx.globalAlpha = this.alpha;
-		ctx.fill();
-		ctx.globalAlpha = 1;
-
-	}
-
-	update() {
-		this.x += this.xvel;
-		this.y += this.yvel;
-
-		// Wrap around edges
-		if (this.x < 0) {
-			this.x = cvs.width;
-		}
-		if (this.x > cvs.width) {
-			this.x = 0;
-		}
-		if (this.y < 0) {
-			this.y = cvs.height;
-		}
-		if (this.y > cvs.height) {
-			this.y = 0;
-		}
-	}
+function clearCanvases() {
+	document.querySelectorAll('.stars').forEach((canvas) => canvas.remove());
 }
 
 function initializeStars() {
-	stars.length = 0;
+	clearCanvases();
 
-	const starCount = Math.floor((cvs.width * cvs.height) / 5000);
+	const starCount = Math.floor((window.innerWidth * window.innerHeight) / 12000);
 
-	for (let i = 0; i < starCount; i++) {
-		stars.push(new Star());
+	for (let ci = 0; ci < 5; ci ++) {
+		console.log(ci);
+		const cvs = document.createElement('canvas');
+		cvs.classList.add('stars');
+		cvs.width = window.innerWidth + 100;
+		cvs.height = window.innerHeight + 100;
+		const ctx = cvs.getContext('2d');
+		ctx.fillStyle = `white`;
+		ctx.globalAlpha = 0.2 + ci / 10;
+		cvs.setAttribute('data-stars-id', ci);
+		for (let i = 0; i < starCount; i++) {
+			ctx.beginPath();
+			ctx.arc(Math.random() * cvs.width, Math.random() * cvs.height, 1 + ci / 4, 0, Math.PI * 2);
+			ctx.fill();
+		}
+		document.body.appendChild(cvs);
 	}
 }
 
-function draw() {
-	ctx.clearRect(0, 0, cvs.width, cvs.height);
-
-	ctx.fillStyle = 'white';
-	stars.forEach((star) => {
-		star.draw();
-		star.update();
-	});
-
-	requestAnimationFrame(draw);
-}
-
-draw();
-
 function setBackground(category) {
-	const { background } = categories[category];
+	const { background, stars } = categories[category];
 	const previousBackground = document.querySelector('.currentBackground');
 	const newBackground = document.getElementById(`bg${background}`);
 
-	newBackground.style.zIndex = -2;
+	newBackground.style.zIndex = -4;
 
 	previousBackground.style.opacity = 0;
+
+	document.querySelectorAll('.stars').forEach((cvs) => {
+		const multiplier = cvs.getAttribute('data-stars-id') / 5;
+		const x = stars[0] * multiplier;
+		const y = stars[1] * multiplier;
+		cvs.style.transform = `translateY(-${y}px) translateX(-${x}px)`;
+	});
 
 	setTimeout(() => {
 		newBackground.style.zIndex = '';
@@ -88,5 +49,5 @@ function setBackground(category) {
 		previousBackground.classList.remove('currentBackground');
 
 		previousBackground.style.opacity = 1;
-	}, 250);
+	}, 500);
 }
