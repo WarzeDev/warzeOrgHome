@@ -5,7 +5,7 @@ function clearCanvases() {
 function initializeStars() {
 	clearCanvases();
 
-	const starCount = Math.floor((window.innerWidth * window.innerHeight) / 12000);
+	const starCount = Math.floor((window.innerWidth * window.innerHeight) / 6000);
 
 	for (let ci = 0; ci < 5; ci ++) {
 		console.log(ci);
@@ -15,7 +15,7 @@ function initializeStars() {
 		cvs.height = window.innerHeight + 100;
 		const ctx = cvs.getContext('2d');
 		ctx.fillStyle = `white`;
-		ctx.globalAlpha = 0.2 + ci / 10;
+		ctx.globalAlpha = (0.2 + ci / 10) * Math.random();
 		cvs.setAttribute('data-stars-id', ci);
 		for (let i = 0; i < starCount; i++) {
 			ctx.beginPath();
