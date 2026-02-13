@@ -120,7 +120,6 @@ section.hidden {
 	height: 50px;
 	font-size: 22px;
 	background-color: rgba(0, 0, 0, 0.187);
-	backdrop-filter: blur(3px);
 	border: 2px solid rgba(119, 119, 119, 0.379);
 	padding: 10px 20px;
 	margin-inline: 6px;
