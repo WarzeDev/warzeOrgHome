@@ -29,3 +29,22 @@
 	font-size: 28px;
 	text-align: center;
 }
+@media screen and (max-width: 650px) {
+	#games {
+		justify-content: center;
+
+		a {
+			width: 27vw;
+			height: 27vw;
+
+			img {
+				height: 17vw;
+				width: 17vw;
+			}
+
+			h1 {
+				font-size: 4vw;
+			}
+		}
+	}
+}

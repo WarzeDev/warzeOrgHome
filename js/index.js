@@ -106,7 +106,6 @@ if ('ontouchstart' in window) {
 // Make thumbnails turn into youtube embeds on click
 document.querySelectorAll('.thumb').forEach((thumbnail) => {
 	thumbnail.addEventListener('click', (e) => {
-		console.log(e.target.dataset.video)
 		const iframe = document.createElement('iframe');
 		iframe.src = `https://www.youtube.com/embed/${e.target.dataset.video}`;
 		iframe.frameborder = '0';

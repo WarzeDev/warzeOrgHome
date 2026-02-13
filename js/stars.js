@@ -8,7 +8,6 @@ function initializeStars() {
 	const starCount = Math.floor((window.innerWidth * window.innerHeight) / 6000);
 
 	for (let ci = 0; ci < 5; ci ++) {
-		console.log(ci);
 		const cvs = document.createElement('canvas');
 		cvs.classList.add('stars');
 		cvs.width = window.innerWidth + 100;

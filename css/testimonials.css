@@ -33,3 +33,9 @@
 #testimonialfooter {
     margin-block: 24px;
 }
+
+@media screen and (max-width: 600px) {
+    .testimonial div img {
+        width: 50%;
+    }
+}
