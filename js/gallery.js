@@ -6,6 +6,7 @@ document.querySelectorAll('img[data-full]').forEach(img => {
 
     const container = document.createElement('div');
     const fullImg = document.createElement('img');
+    container.style.display = 'none';
     fullImg.src = full;
     container.appendChild(fullImg);
     document.body.appendChild(container);

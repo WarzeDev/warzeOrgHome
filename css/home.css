@@ -1,0 +1,58 @@
+#wartOSscr {
+	width: 100%;
+	max-height: 50vh;
+	border-radius: 8px;
+	box-shadow: 4px 5px 9px 0px rgba(0, 0, 0, 0.5);
+	display: block;
+	margin-block: 8px;
+}
+#hero {
+	display: flex;
+
+	flex-direction: row;
+	align-items: center;
+	margin-top: 12px;
+
+	padding: 12px;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 20px;
+	box-shadow: inset 0 0 10px 5px rgba(0, 0, 0, 0.5);
+	gap: 8px;
+
+	#heroInfo {
+		#heroName {
+			font-size: 40px;
+			margin: 0;
+		}
+	
+		#heroHandle {
+			font-size: 18px;
+			margin: 0;
+			color: rgb(140, 140, 140);
+		}
+	
+		#heroSkills {
+			font-size: 18px;
+		}
+	}
+}
+
+#heroAvatar {
+	position: relative;
+
+	#greenCircle {
+		cursor: pointer;
+		position: relative;
+		filter: drop-shadow(0 0 6px #22c55e);
+		animation: greenCirclePulse 1s ease-in-out infinite alternate;
+	}
+}
+
+@keyframes greenCirclePulse {
+	from {
+		filter: drop-shadow(0 0 4px #22c55e);
+	}
+	to {
+		filter: drop-shadow(0 0 8px #22c55e);
+	}
+}

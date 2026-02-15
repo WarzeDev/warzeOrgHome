@@ -5,20 +5,24 @@ function clearCanvases() {
 function initializeStars() {
 	clearCanvases();
 
-	const starCount = Math.floor((window.innerWidth * window.innerHeight) / 5000);
+	const starCount = Math.floor((window.innerWidth * window.innerHeight) / 2000);
+	const layers = 5;
 
-	for (let ci = 0; ci < 5; ci ++) {
+	for (let ci = 0; ci < layers; ci ++) {
+		const depth = ci / (layers - 1);
+
 		const cvs = document.createElement('canvas');
 		cvs.classList.add('stars');
 		cvs.width = window.innerWidth + 150;
 		cvs.height = window.innerHeight + 150;
 		const ctx = cvs.getContext('2d');
+		ctx.globalAlpha = 0.1 + depth * 0.1;
 		ctx.fillStyle = `white`;
-		ctx.globalAlpha = (0.2 + ci / 10) * Math.random();
 		cvs.setAttribute('data-stars-id', ci);
+		const size = 0.5 + ci / layers;
 		for (let i = 0; i < starCount; i++) {
 			ctx.beginPath();
-			ctx.arc(Math.random() * cvs.width, Math.random() * cvs.height, 1 + ci / 4, 0, Math.PI * 2);
+			ctx.arc(Math.random() * cvs.width, Math.random() * cvs.height, size, 0, Math.PI * 2);
 			ctx.fill();
 		}
 		document.body.appendChild(cvs);
