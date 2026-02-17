@@ -235,7 +235,13 @@ if (window.location.hash.length > 0) {
 		document.querySelector('[data-category="' + subCategory + '"]').click();
 	}
 } else {
-	// Initial category
 	selectCategory(currentCategory);
 	moveUnderlineToElement(document.getElementById('selectedCategory'));
 }
+
+function makeAllATagsTargetBlank() {
+	document.querySelectorAll('a').forEach((a) => {
+		a.target = '_blank';
+	});
+}
+makeAllATagsTargetBlank();

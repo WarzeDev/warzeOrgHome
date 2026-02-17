@@ -66,3 +66,20 @@
 		}
 	}
 }
+
+#heroInfoContainer {
+	display: flex;
+	gap: 12px;
+	align-items: center;
+
+	#heroLocationContainer {
+		display: flex;
+		gap: 4px;
+		align-items: center;
+		text-decoration: none;
+
+		#heroLocation {
+			color: #eba3a3;
+		}
+	}
+}

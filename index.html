@@ -16,6 +16,8 @@
 		<link rel='stylesheet' type='text/css' href='/css/post.css' defer>
 		<link rel='stylesheet' type='text/css' href='/css/mywork.css' defer>
 
+		<link rel="manifest" href="/site.webmanifest">
+
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.7/viewer.min.js" integrity="sha512-lZD0JiwhtP4UkFD1mc96NiTZ14L7MjyX5Khk8PMxJszXMLvu7kjq1sp4bb0tcL6MY+/4sIuiUxubOqoueHrW4w==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.7/viewer.min.css" integrity="sha512-vRbASHFS0JiM4xwX/iqr9mrD/pXGnOP2CLdmXSSNAjLdgQVFyt4qI+BIoUW7/81uSuKRj0cWv3Dov8vVQOTHLw==" crossorigin="anonymous" referrerpolicy="no-referrer" defer/>
 
@@ -33,8 +35,8 @@
 		<meta property="og:description" content="The homepage of Leonhard Tissen to showcase his development projects. Keep in touch with recent game releases, check out projects or contact Leonhard Tissen.">
 		<meta property="og:image" content="https://home.warze.org/meta.png">
 		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="@warzedev">
-		<meta name="twitter:creator" content="@warzedev">
+		<meta name="twitter:site" content="@warze">
+		<meta name="twitter:creator" content="@warze">
 		<meta name="twitter:url" content="https://home.warze.org/">
 		<meta name="twitter:title" content="Warze.org - Homepage of Leonhard Tissen">
 		<meta name="twitter:description" content="The homepage of Leonhard Tissen to showcase his development projects. Keep in touch with recent game releases, check out projects or contact Leonhard Tissen.">
@@ -120,13 +122,20 @@
 									<circle cx="104" cy="104" r="24" fill="black"/>
 								</mask>
 							</defs>
-							<image href="/gallery/sadobunny/warzesadobunnypfp.png" x="0" y="0" width="128" height="128" preserveAspectRatio="xMidYMid slice" mask="url(#avatarMask)"/>
+							<image href="/about/warzepfp.webp" x="0" y="0" width="128" height="128" preserveAspectRatio="xMidYMid slice" mask="url(#avatarMask)"/>
 							<circle id="greenCircle" cx="104" cy="104" r="15" fill="#22c55e"/>
 						</svg>
 					</div>
 					<div id="heroInfo">
 						<h1 id="heroName">Leonhard Tissen</h1>
-						<h2 id="heroHandle">@warze</h2>
+						<div id="heroInfoContainer">
+							<span id="heroHandle">@warze</span>
+							<span> — </span>
+							<a id="heroLocationContainer" href="https://www.google.com/maps/place/37696+Marienm%C3%BCnster/">
+								<img src="/icons/location.svg" width="24" alt="Location">
+								<span id="heroLocation">Marienmünster, Germany</span>
+							</a>
+						</div>
 						<p id="heroSkills">Web developer • Game designer • 3D modeler</p>
 					</div>
 				</div>
@@ -154,12 +163,12 @@
 
 					<h1>
 						<a href="https://icecream.warze.org">
-							<img class="titleIcon" src="/icons/site.svg" alt="Play Ice Cream Parlor">
+							<img class="titleIcon" src="/icons/play.svg" alt="Play Ice Cream Parlor">
 						</a>
 						<a href="https://gitea.warze.org/warzeCasinoBot">
 							<img class="titleIcon" src="/icons/git.svg" alt="Ice Cream Parlor on Gitea">
 						</a>
-						Releasing Ice Cream Parlor!
+						Releasing Ice Cream Parlor
 					</h1>
 					<p>A few years ago I worked on a prototype for an ice cream serving game.</p>
 					<p>Because I found it so fun and addicting, I picked it back up and released it on my site!</p>
@@ -170,10 +179,14 @@
 				<div class="post">
 					<span class="timestamp">Jan 4, 2026</span>
 
-					<h1>Check out Plompy!</h1>
+					<h1>
+						<a href="https://home.warze.org/#mywork.models">
+							<img class="titleIcon" src="/icons/site.svg" alt="Check out my models">
+						</a>
+						Check out Plompy
+					</h1>
 					<p>I've been making lots of custom models for Minecraft using Blockbench in my own time and for clients.</p>
 					<p>Plompy is my first custom mob that works using <a href="https://modrinth.com/mod/entity-model-features/versions">EMF</a> and <a href="https://modrinth.com/mod/entitytexturefeatures">ETF</a> and based off a real bat-eared fox</p>
-					<p>I'm considering having a dedicated page to show off all of my models</p>
 					
 					<img class="cover" src="/news/plompy.webp" data-full="/news/plompy.png" alt="Plompy the Fox, a custom model for Minecraft">
 				</div>
@@ -230,7 +243,7 @@
 
 					<h1>
 						<a href="https://lightson2.warze.org">
-							<img class="titleIcon" src="/icons/site.svg" alt="Play Lights on! 2">
+							<img class="titleIcon" src="/icons/play.svg" alt="Play Lights on! 2">
 						</a>
 						<a href="https://gitea.warze.org/lightsOn2">
 							<img class="titleIcon" src="/icons/git.svg" alt="Lights on! 2 on Gitea">
@@ -245,11 +258,18 @@
 				<div class="post">
 					<span class="timestamp">January 27, 2024</span>
 
-					<h1>Talk with AI on discord!</h1>
+					<h1>
+						<a href="https://gitea.warze.org/discordOllama">
+							<img class="titleIcon" src="/icons/git.svg" alt="Discord Ollama on Gitea">
+						</a>
+						<a href="https://discord.warze.org">
+							<img class="titleIcon" src="/icons/discordwhite.svg" alt="Check out Discord Ollama on my Server">
+						</a>
+						Talk with AI on discord
+					</h1>
 
 					<p>I created a discord bot that interfaces with the Ollama API, letting you host LLMs on your own PC.</p>
-					<p>We sometimes have fun with them in <a href="https://discord.warze.org/">my server</a>, but if you'd like to host it yourself, the code is on <a href="https://gitea.warze.org/discordOllama">Gitea</a>.</p>
-
+					
 					<a href="https://gitea.warze.org/discordOllama">
 						<img class="cover" src="/news/discordOllama.webp" data-full="/news/discordOllama.png" alt="Discord Ollama AI Bot">
 					</a>
@@ -260,16 +280,16 @@
 
 					<h1>
 						<a href="https://ball2.warze.org">
-							<img class="titleIcon" src="/icons/site.svg" alt="Play Ball 2">
+							<img class="titleIcon" src="/icons/play.svg" alt="Play Ball 2">
 						</a>
 						<a href="https://gitea.warze.org/ball2Remake">
 							<img class="titleIcon" src="/icons/git.svg" alt="Ball 2 on Gitea">
 						</a>
-						My new Platformer Game: Ball 2 Remake
+						My new Platformer Game: Ball 2
 					</h1>
-					<p>Ball 2 Remake is a pixel perfect recreation of a really old computer game from my childhood (Released ~2000).</p>
+					<p>Ball 2 is a pixel perfect recreation of a really old computer game from my childhood (Released ~2000).</p>
 					<p>Jump through 30 levels or create your own with the level editor!</p>
-					<p><a href="https://ball2.warze.org">Try out Ball 2 Remake now</a>, the code is on <a href="https://gitea.warze.org/ball2Remake">Gitea</a>.</p>
+					<p><a href="https://ball2.warze.org">Try out Ball 2 now</a>, the code is on <a href="https://gitea.warze.org/ball2Remake">Gitea</a>.</p>
 					
 					<img class="cover thumb" src="/news/ball2.jpg" data-video="72-gRQAK_SU">
 				</div>
@@ -277,9 +297,16 @@
 				<div class="post">
 					<span class="timestamp">December 3, 2023</span>
 
-					<h1>Showing off an animated 3D book in CSS and JS</h1>
+					<h1>
+						<a href="https://cssbook.warze.org">
+							<img class="titleIcon" src="/icons/site.svg" alt="View CSS Book">
+						</a>
+						<a href="https://gitea.warze.org/cssBook">
+							<img class="titleIcon" src="/icons/git.svg" alt="Ball 2 on Gitea">
+						</a>
+						Showing off an animated 3D book in CSS and JS
+					</h1>
 					<p>Here's a small project that I recorded myself creating. It's an animated book using beautiful CSS animations.</p>
-					<p><a href="https://cssbook.warze.org">You can view the finished product here</a> and the code for it on <a href="https://gitea.warze.org/cssBook">Gitea</a>.</p>
 					
 					<img class="cover thumb" src="/news/cssbook.jpg" data-video="jkKjVyNrjco">
 				</div>
@@ -287,23 +314,36 @@
 				<div class="post">
 					<span class="timestamp">November 22, 2023</span>
 
-					<h1>I rewrote WartOS in VueJS</h1>
+					<h1>
+						<a href="https://wartos.warze.org">
+							<img class="titleIcon" src="/icons/site.svg" alt="Boot WartOS">
+						</a>
+						<a href="https://gitea.warze.org/wartOS">
+							<img class="titleIcon" src="/icons/git.svg" alt="WartOS on Gitea">
+						</a>
+						I rewrote WartOS in VueJS
+					</h1>
 
 					<p>It now features a more streamlined design with more icons, a search system and rich animations.</p>
-					<p><a href="https://wartos.warze.org">Check out WartOS here</a>, the code is public <a href="https://gitea.warze.org/wartOSVue">on my Gitea</a>.</p>
-
+					
 					<img class="cover thumb" src="/news/wartos.jpg" data-video="7U8Z840xhYc">
 				</div>
 
 				<div class="post">
 					<span class="timestamp">November 14, 2023</span>
 
-					<h1>My new Puzzle Game: Lights on!</h1>
+					<h1>
+						<a href="https://lightson.warze.org">
+							<img class="titleIcon" src="/icons/play.svg" alt="Play Lights on">
+						</a>
+						<a href="https://gitea.warze.org/lightsOn">
+							<img class="titleIcon" src="/icons/git.svg" alt="Light on on Gitea">
+						</a>
+						My new Puzzle Game: Lights on
+					</h1>
 					<p>A remake of a popular puzzle game with more fleshed out puzzle design.</p>
 					<p>Can you solve all 14 levels? Turn all the lights on, it shouldn't be that hard... right?</p>
 					<p>With each click, adjacent lamps toggle and you have to fiddle around to find the right pattern.</p>
-
-					<p><a href="https://lightson.warze.org">Lights on is available here</a> and the code is on <a href="https://gitea.warze.org/lightsOn">Gitea</a>.</p>
 
 					<img class="cover thumb" src="/news/lightson.jpg" data-video="KjQLdaKSoCA">
 				</div>
@@ -311,23 +351,36 @@
 				<div class="post">
 					<span class="timestamp">November 6, 2023</span>
 
-					<h1>Practice Flags using my new game!</h1>
+					<h1>
+						<a href="https://flagquiz.warze.org">
+							<img class="titleIcon" src="/icons/play.svg" alt="Play Flag Quiz">
+						</a>
+						<a href="https://gitea.warze.org/flagQuiz">
+							<img class="titleIcon" src="/icons/git.svg" alt="Flag Quiz on Gitea">
+						</a>
+						Practice Flags using my new game
+					</h1>
 					<p>FlagQuiz is a game where you have to guess the flag of a country. It's a fun way to learn flags and their countries across the world.</p>
 
-					<p><a href="https://flagquiz.warze.org/">Play Flag Quiz here</a> and the code is on <a href="https://gitea.warze.org/flagQuiz">my Gitea</a>.</p>
-				
 					<img class="cover" src="/news/flagQuiz.png" alt="FlagQuiz" data-full="/news/flagQuiz.png">
 				</div>
 
 				<div class="post">
 					<span class="timestamp">November 4, 2023</span>
 					
-					<h1>Create a Discord status out of emojis!</h1>
+					<h1>
+						<a href="https://discordstatus.warze.org">
+							<img class="titleIcon" src="/icons/site.svg" alt="Create a Discord Status">
+						</a>
+						<a href="https://gitea.warze.org/discordEmojiStatus">
+							<img class="titleIcon" src="/icons/git.svg" alt="Flag Quiz on Gitea">
+						</a>
+						Create a Discord status out of emojis
+					</h1>
 
 					<p>A VueJS rewrite of a similar project I made in 2021.</p>
 					<p>A widely used tool shared across the social media platform Discord to create pixel art out of emoji and use it in messages, statuses, about me or wherever else.</p>
-					<p><a href="https://discordstatus.warze.org">Make your Discord status here</a>, the code is on <a href="https://gitea.warze.org/discordEmojiStatus">my Gitea</a>.</p>
-					
+				
 					<a href="https://discordstatus.warze.org">
 						<img class="cover" src="/news/discordstatus.webp" data-full="/news/discordstatus.png" alt="Discord Status">
 					</a>
@@ -336,7 +389,12 @@
 				<div class="post">
 					<span class="timestamp">June 15, 2023</span>
 
-					<h1>I enhanced JollyWorld customization!</h1>
+					<h1>
+						<a href="https://jollyworld.app">
+							<img class="titleIcon" src="/icons/play.svg" alt="Play Flag Quiz">
+						</a>
+						I enhanced JollyWorld customization
+					</h1>
 
 					<p>By developing a modding tool for <a href="https://jollyworld.app">JollyWorld</a>, I allowed players to easily create their own custom characters.</p>
 					<p>It also shows a wide variety of community-created mods that can be downloaded with just a click. Most of which have amassed 10,000+ downloads.</p>
@@ -448,7 +506,7 @@
 				<div id="models" class="subCategorySection hidden">
 					<div class="commentContainer">
 						<img src="/about/warzepoint.svg">
-						<p class="comment">Minecraft got me into 3D modeling using Blockbench, with which I enjoyed making custom hats, weapons and other objects for friends and clients. <a href="https://kofi.warze.org">I'm also taking commissions on Ko-Fi</a>.</p>
+						<p class="comment">Minecraft got me into 3D modeling using Blockbench, with which I enjoyed making custom hats, weapons and other objects for friends and clients. <a href="https://kofi.warze.org">I'm also taking commissions on <span style="color: #FF5E5B">Ko-Fi</span></a>.</p>
 					</div>
 					<div id="modelsFlex"></div>
 				</div>
@@ -573,7 +631,7 @@
 			<section id="testimonials" class="hidden" style="opacity: 0">
 				<div class="commentContainer">
 					<img src="/about/warzestretch.svg">
-					<p class="comment">Want to be featured here? Write a message on <a href="https://kofi.warze.org">Ko-fi</a>, <a href="https://linkedin.warze.org">LinkedIn</a> or <a href="https://discord.warze.org">Discord</a>. I appreciate you all for liking my work and supporting me :)</p>
+					<p class="comment">Want to be featured here? Write a message on <a href="https://kofi.warze.org" style="color: #FF5E5B">Ko-Fi</a>, <a href="https://linkedin.warze.org" style="color: #0E76A8">LinkedIn</a> or <a href="https://discord.warze.org" style="color: #7289da">Discord</a>. I appreciate you all for liking my work and supporting me :)</p>
 				</div>
 
 				<div class="testimonial">
@@ -603,6 +661,13 @@
 					<div>
 						<p class="name">sadodeer</p>
 						<p>Warze is a super incredible guy and amazing to talk to, super chill and just the greatest vibes all around. His coding skills are absolutely amazing and his determination to solve and understand stuff in code is mesmerizing to witness. Warze has changed my life a lot for the better, cant believe i got so lucky to have such an amazing significant other!!</p>
+					</div>
+				</a>
+				<a class="testimonial" href="https://discord.com/users/430173597248651276">
+					<img class="avatar" src="/testimonials/citied.webp" alt="Citied">
+					<div>
+						<p class="name">Citied</p>
+						<p>Does amazing work and I'm super happy with the result glad to have gone straight here for this wish you well bro.</p>
 					</div>
 				</a>
 				<div class="testimonial">

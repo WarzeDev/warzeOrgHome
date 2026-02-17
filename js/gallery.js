@@ -1,9 +1,8 @@
 function updateClickableImages() {
   document.querySelectorAll('*[data-full]').forEach(img => {
-    console.log(img.src);
-
     const full = img.dataset.full;
     img.removeAttribute('data-full');
+    img.style.cursor = 'pointer';
 
     img.addEventListener('click', e => {
       e.preventDefault();

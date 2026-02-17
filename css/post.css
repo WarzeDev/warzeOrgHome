@@ -4,16 +4,27 @@
 .post {
 	margin-block: 20px;
 	margin-left: 10px;
-	margin-right: 50px;
+	margin-right: 20px;
 	padding: 20px;
 	background-color: rgba(0, 0, 0, 0.5);
 	padding-left: 25px;
 	box-shadow: inset 0 0 10px 5px rgba(0, 0, 0, 0.5), 4px 4px 5px rgba(0, 0, 0, 0.3);
 	border-radius: 0 20px 20px 0;
 	position: relative;
+	max-width: 1200px;
 
-	h1 a {
-		text-decoration: none;
+	h1 {
+		display: flex;
+		align-items: center;
+		gap: 6px;
+		max-width: 570px;
+
+		a {
+			text-decoration: none;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
 	}
 }
 .post::before {
@@ -71,7 +82,7 @@ p {
 		font-size: 1.2em;
 	}
 }
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1450px) {
 	#posts, #discordbots {
 		width: 100%;
 	}
@@ -79,7 +90,7 @@ p {
 		min-height: 300px;
 	}
 	.post h1, .post p {
-		max-width: 450px;
+		max-width: 550px;
 	}
 	.post .cover {
 		position: absolute;
