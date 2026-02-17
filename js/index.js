@@ -40,6 +40,8 @@ function selectCategory(category) {
 	const { hueShift, color } = categories[category];
 	earth.style.filter = `hue-rotate(${hueShift}deg)`;
 	document.documentElement.style.setProperty('--highlight', color);
+
+	window.location.hash = category;
 	
 	if (category !== currentCategory) {
 		hideCategory(currentCategory);
@@ -91,10 +93,6 @@ document.querySelectorAll('.category').forEach((category) => {
 	});
 });
 
-// Initial category
-selectCategory(currentCategory);
-moveUnderlineToElement(document.getElementById('selectedCategory'));
-
 // Hide PC only games if on mobile
 if ('ontouchstart' in window) {
 	document.querySelectorAll('.pcOnly').forEach((element) => {
@@ -111,6 +109,7 @@ document.querySelectorAll('.thumb').forEach((thumbnail) => {
 		iframe.frameborder = '0';
 		iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
 		iframe.allowFullscreen = true;
+		iframe.classList.add('cover');
 		e.target.parentElement.replaceChild(iframe, e.target);
 	});
 });
@@ -153,6 +152,9 @@ document.querySelectorAll('.subCategory').forEach((category) => {
 		});
 
 		const newCategory = e.target.dataset.category;
+
+		const finalHash = window.location.hash.replace('#', '').split('.')[0] + '.' + newCategory;
+		window.location.hash = finalHash;
 
 		document.getElementById(newCategory).classList.remove('hidden');
 
@@ -218,3 +220,22 @@ function setupModelImages() {
 }
 
 updateClickableImages();
+
+if (window.location.hash.length > 0) {
+	document.querySelectorAll('.selectedCategory').forEach((category) => {
+		category.classList.remove('selectedCategory');
+	});
+	const category = window.location.hash.replace('#', '').split('.')[0];
+	const subCategory = window.location.hash.replace('#', '').split('.')[1];
+	selectCategory(category);
+	document.querySelector('[data-category="' + category + '"]').classList.add('selectedCategory');
+	moveUnderlineToElement(document.getElementById('selectedCategory'));
+
+	if (subCategory) {
+		document.querySelector('[data-category="' + subCategory + '"]').click();
+	}
+} else {
+	// Initial category
+	selectCategory(currentCategory);
+	moveUnderlineToElement(document.getElementById('selectedCategory'));
+}

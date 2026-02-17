@@ -41,7 +41,6 @@
 	position: relative;
 
 	#greenCircle {
-		cursor: pointer;
 		position: relative;
 		filter: drop-shadow(0 0 6px #22c55e);
 		animation: greenCirclePulse 1s ease-in-out infinite alternate;

@@ -2,13 +2,19 @@
 	padding-bottom: 300px;
 }
 .post {
-	margin: 20px;
+	margin-block: 20px;
+	margin-left: 10px;
+	margin-right: 50px;
 	padding: 20px;
 	background-color: rgba(0, 0, 0, 0.5);
-	padding-left: 40px;
+	padding-left: 25px;
 	box-shadow: inset 0 0 10px 5px rgba(0, 0, 0, 0.5), 4px 4px 5px rgba(0, 0, 0, 0.3);
 	border-radius: 0 20px 20px 0;
 	position: relative;
+
+	h1 a {
+		text-decoration: none;
+	}
 }
 .post::before {
 	content: '';
@@ -42,7 +48,7 @@ p {
 	font-weight: 500;
 	color: rgba(255, 255, 255, 0.7);
 }
-.post iframe, .post img {
+.post .cover {
 	width: clamp(140px, 80%, 460px);
 	aspect-ratio: 16 / 9;
 	border: none;
@@ -75,12 +81,15 @@ p {
 	.post h1, .post p {
 		max-width: 450px;
 	}
-	.post iframe, .post img {
+	.post .cover {
 		position: absolute;
 		right: 20px;
 		top: 20px;
 	}
 }
 .thumb {
-	cursor: pointer
+	cursor: pointer;
+}
+.titleIcon {
+	width: 28px;
 }

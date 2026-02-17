@@ -111,7 +111,7 @@
 
 			<section id="home">
 				<div id="hero">
-					<div id="heroAvatar">
+					<div id="heroAvatar" data-full="/gallery/sadobunny/warzesadobunnypfp.png">
 						<svg width="128" height="128" viewBox="0 0 128 128">
 							<defs>
 								<mask id="avatarMask">
@@ -120,7 +120,7 @@
 									<circle cx="104" cy="104" r="24" fill="black"/>
 								</mask>
 							</defs>
-							<image href="/about/leo2_zoom_normal_320px.webp" x="0" y="0" width="128" height="128" preserveAspectRatio="xMidYMid slice" mask="url(#avatarMask)"/>
+							<image href="/gallery/sadobunny/warzesadobunnypfp.png" x="0" y="0" width="128" height="128" preserveAspectRatio="xMidYMid slice" mask="url(#avatarMask)"/>
 							<circle id="greenCircle" cx="104" cy="104" r="15" fill="#22c55e"/>
 						</svg>
 					</div>
@@ -130,7 +130,7 @@
 						<p id="heroSkills">Web developer • Game designer • 3D modeler</p>
 					</div>
 				</div>
-				<p>Browse all of my projects in an OS-like experience.</p>
+				<!-- <p>Browse all of my projects in an OS-like experience.</p>
 				<p style="font-size: 14px;">Play games, use applications, customize the colors and wallpaper!</p>
 				<a href="https://wartos.warze.org/" target="_blank">
 					<img src="/wartos/preview.webp" alt="WartOS Screenshot Preview" id="wartOSscr" fetchpriority="high">
@@ -145,19 +145,26 @@
 						</svg>
 						Launch WartOS
 					</button>
-				</a>
+				</a> -->
 			</section>
 
 			<section id="posts" class="hidden" style="opacity: 0">
 				<div class="post">
 					<span class="timestamp">Feb 16, 2026</span>
 
-					<h1>Releasing Ice Cream Parlor!</h1>
+					<h1>
+						<a href="https://icecream.warze.org">
+							<img class="titleIcon" src="/icons/site.svg" alt="Play Ice Cream Parlor">
+						</a>
+						<a href="https://gitea.warze.org/warzeCasinoBot">
+							<img class="titleIcon" src="/icons/git.svg" alt="Ice Cream Parlor on Gitea">
+						</a>
+						Releasing Ice Cream Parlor!
+					</h1>
 					<p>A few years ago I worked on a prototype for an ice cream serving game.</p>
 					<p>Because I found it so fun and addicting, I picked it back up and released it on my site!</p>
-					<p>You can play <a href="https://icecream.warze.org">Ice Cream Parlor</a> here or check out the <a href="https://gitea.warze.org/iceCreamGame">Gitea repository</a>.</p>
 					
-					<img src="/news/icecream.webp" data-full="/news/icecream.png" alt="Ice Cream Parlor">
+					<img class="cover" src="/news/icecream.webp" data-full="/news/icecream.png" alt="Ice Cream Parlor">
 				</div>
 
 				<div class="post">
@@ -168,32 +175,45 @@
 					<p>Plompy is my first custom mob that works using <a href="https://modrinth.com/mod/entity-model-features/versions">EMF</a> and <a href="https://modrinth.com/mod/entitytexturefeatures">ETF</a> and based off a real bat-eared fox</p>
 					<p>I'm considering having a dedicated page to show off all of my models</p>
 					
-					<img src="/news/plompy.webp" data-full="/news/plompy.png" alt="Plompy the Fox, a custom model for Minecraft">
+					<img class="cover" src="/news/plompy.webp" data-full="/news/plompy.png" alt="Plompy the Fox, a custom model for Minecraft">
 				</div>
 
 				<div class="post">
 					<span class="timestamp">Apr 9, 2025</span>
 
-					<h1>My new Tool: BruteCraft</h1>
+					<h1>
+						<a href="https://brutecraft.warze.org">
+							<img class="titleIcon" src="/icons/site.svg" alt="Try out Brutecraft">
+						</a>
+						<a href="https://gitea.warze.org/brutecraft">
+							<img class="titleIcon" src="/icons/git.svg" alt="BruteCraft on Gitea">
+						</a>
+						My new Tool: BruteCraft
+					</h1>
 					<p>BruteCraft is a helpful tool for <a href="https://wynncraft.com">WynnCraft</a> that helps with a pretty complicated system in the game: Crafting.</p>
 					<p>In WynnCraft, you can combine hundreds of different items to create gear and consumables with purposes ranging from combat, movement, survivability and more.</p>
 					<p>BruteCraft helps you figure out the best combination of items to yield the best result possible using a evolutionary algorithm.</p>
-
-					<p><a href="https://brutecraft.warze.org">Check it out now!</a> The code is also available on <a href="https://gitea.warze.org/brutecraft">my Gitea instance</a>.</p>
 					
-					<img src="/news/brutecraft.webp" data-full="/news/brutecraft.png" alt="BruteCraft">
+					<img class="cover" src="/news/brutecraft.webp" data-full="/news/brutecraft.png" alt="BruteCraft">
 				</div>
 
 				<div class="post">
 					<span class="timestamp">May 6, 2024</span>
 
-					<h1>My new App: BlanketJS</h1>
+					<h1>
+						<a href="https://blanket.warze.org">
+							<img class="titleIcon" src="/icons/site.svg" alt="Check out BlanketJS">
+						</a>
+						<a href="https://gitea.warze.org/blanketJs">
+							<img class="titleIcon" src="/icons/git.svg" alt="Ice Cream Parlor on Gitea">
+						</a>
+						My new App: BlanketJS
+					</h1>
 					<p>Listen to ambient sounds, mix them together and adjust their volumes.</p>
 					<p>Set it and forget it, this will increase your productivity, as it does mine.</p>
-					<p><a href="https://blanket.warze.org">Check it out now!</a> The code is also available on <a href="https://gitea.warze.org/blanketJs">Gitea</a>.</p>
 					
 					<a href="https://blanket.warze.org">
-						<img src="/news/blanket.webp" data-full="/news/blanket.png" alt="BlanketJs">
+						<img class="cover" src="/news/blanket.webp" data-full="/news/blanket.png" alt="BlanketJs">
 					</a>
 				</div>
 
@@ -208,11 +228,18 @@
 				<div class="post">
 					<span class="timestamp">February 3, 2024</span>
 
-					<h1>My new Puzzle Game: Lights on! 2</h1>
-					<p>"Lights On! 2" is a sister project I've made in just 3 days. All you have to do is place light bulbs throughout the room and make sure all of it is illuminated.</p>
-					<p>Can you beat all 20 Levels? <a href="https://lightson2.warze.org">Give it a try!</a> The code is also available on <a href="https://gitea.warze.org/lightsOn2">Gitea</a>.</p>
+					<h1>
+						<a href="https://lightson2.warze.org">
+							<img class="titleIcon" src="/icons/site.svg" alt="Play Lights on! 2">
+						</a>
+						<a href="https://gitea.warze.org/lightsOn2">
+							<img class="titleIcon" src="/icons/git.svg" alt="Lights on! 2 on Gitea">
+						</a>
+						My new Puzzle Game: Lights on! 2
+					</h1>
+					<p>"Lights On! 2" is a sequel project I've made in just 3 days. All you have to do is place light bulbs throughout the room and make sure all of it is illuminated.</p>
 					
-					<img class="thumb" src="/news/lightson2.jpg" data-video="CsbU1txftRc">
+					<img class="cover thumb" src="/news/lightson2.jpg" data-video="CsbU1txftRc">
 				</div>
 
 				<div class="post">
@@ -224,19 +251,27 @@
 					<p>We sometimes have fun with them in <a href="https://discord.warze.org/">my server</a>, but if you'd like to host it yourself, the code is on <a href="https://gitea.warze.org/discordOllama">Gitea</a>.</p>
 
 					<a href="https://gitea.warze.org/discordOllama">
-						<img src="/news/discordOllama.webp" data-full="/news/discordOllama.png" alt="Discord Ollama AI Bot">
+						<img class="cover" src="/news/discordOllama.webp" data-full="/news/discordOllama.png" alt="Discord Ollama AI Bot">
 					</a>
 				</div>
 
 				<div class="post">
 					<span class="timestamp">January 24, 2024</span>
 
-					<h1>My new Platformer Game: Ball 2 Remake</h1>
+					<h1>
+						<a href="https://ball2.warze.org">
+							<img class="titleIcon" src="/icons/site.svg" alt="Play Ball 2">
+						</a>
+						<a href="https://gitea.warze.org/ball2Remake">
+							<img class="titleIcon" src="/icons/git.svg" alt="Ball 2 on Gitea">
+						</a>
+						My new Platformer Game: Ball 2 Remake
+					</h1>
 					<p>Ball 2 Remake is a pixel perfect recreation of a really old computer game from my childhood (Released ~2000).</p>
 					<p>Jump through 30 levels or create your own with the level editor!</p>
 					<p><a href="https://ball2.warze.org">Try out Ball 2 Remake now</a>, the code is on <a href="https://gitea.warze.org/ball2Remake">Gitea</a>.</p>
 					
-					<img class="thumb" src="/news/ball2.jpg" data-video="72-gRQAK_SU">
+					<img class="cover thumb" src="/news/ball2.jpg" data-video="72-gRQAK_SU">
 				</div>
 
 				<div class="post">
@@ -246,7 +281,7 @@
 					<p>Here's a small project that I recorded myself creating. It's an animated book using beautiful CSS animations.</p>
 					<p><a href="https://cssbook.warze.org">You can view the finished product here</a> and the code for it on <a href="https://gitea.warze.org/cssBook">Gitea</a>.</p>
 					
-					<img class="thumb" src="/news/cssbook.jpg" data-video="jkKjVyNrjco">
+					<img class="cover thumb" src="/news/cssbook.jpg" data-video="jkKjVyNrjco">
 				</div>
 
 				<div class="post">
@@ -257,7 +292,7 @@
 					<p>It now features a more streamlined design with more icons, a search system and rich animations.</p>
 					<p><a href="https://wartos.warze.org">Check out WartOS here</a>, the code is public <a href="https://gitea.warze.org/wartOSVue">on my Gitea</a>.</p>
 
-					<img class="thumb" src="/news/wartos.jpg" data-video="7U8Z840xhYc">
+					<img class="cover thumb" src="/news/wartos.jpg" data-video="7U8Z840xhYc">
 				</div>
 
 				<div class="post">
@@ -270,7 +305,7 @@
 
 					<p><a href="https://lightson.warze.org">Lights on is available here</a> and the code is on <a href="https://gitea.warze.org/lightsOn">Gitea</a>.</p>
 
-					<img class="thumb" src="/news/lightson.jpg" data-video="KjQLdaKSoCA">
+					<img class="cover thumb" src="/news/lightson.jpg" data-video="KjQLdaKSoCA">
 				</div>
 
 				<div class="post">
@@ -281,7 +316,7 @@
 
 					<p><a href="https://flagquiz.warze.org/">Play Flag Quiz here</a> and the code is on <a href="https://gitea.warze.org/flagQuiz">my Gitea</a>.</p>
 				
-					<img src="/news/flagQuiz.png" alt="FlagQuiz">
+					<img class="cover" src="/news/flagQuiz.png" alt="FlagQuiz" data-full="/news/flagQuiz.png">
 				</div>
 
 				<div class="post">
@@ -294,7 +329,7 @@
 					<p><a href="https://discordstatus.warze.org">Make your Discord status here</a>, the code is on <a href="https://gitea.warze.org/discordEmojiStatus">my Gitea</a>.</p>
 					
 					<a href="https://discordstatus.warze.org">
-						<img src="/news/discordstatus.webp" data-full="/news/discordstatus.png" alt="Discord Status">
+						<img class="cover" src="/news/discordstatus.webp" data-full="/news/discordstatus.png" alt="Discord Status">
 					</a>
  				</div>
 
@@ -306,7 +341,7 @@
 					<p>By developing a modding tool for <a href="https://jollyworld.app">JollyWorld</a>, I allowed players to easily create their own custom characters.</p>
 					<p>It also shows a wide variety of community-created mods that can be downloaded with just a click. Most of which have amassed 10,000+ downloads.</p>
 
-					<img class="thumb" src="/news/jollyworld.jpg" data-video="PoCfbDPtJig">
+					<img class="cover thumb" src="/news/jollyworld.jpg" data-video="PoCfbDPtJig">
 				</div>
 			</section>
 
@@ -315,8 +350,8 @@
 					<button class="roundedButton subCategory selectedSubCategory" data-category="games" aria-label="Games">
 						Games
 					</button>
-					<button class="roundedButton subCategory" data-category="models" aria-label="3D Models">
-						3D Models
+					<button class="roundedButton subCategory" data-category="models" aria-label="Blockbench">
+						Blockbench
 					</button>
 					<button class="roundedButton subCategory" data-category="discordbots" aria-label="Discord Bots">
 						Discord Bots
@@ -340,10 +375,6 @@
 						<a href="https://lightson2.warze.org">
 							<img src="/games/lightson2.png" alt="Lights on! 2">
 							<h1>Lights on! 2</h1>
-						</a>
-						<a href="https://happywheels.warze.org" class="pcOnly">
-							<img src="/games/happywheels.jpg" alt="Happy Wheels">
-							<h1>Happy Wheels</h1>
 						</a>
 						<a href="https://icecream.warze.org">
 							<img src="/games/icecream.png" alt="Ice Cream Parlor">
@@ -376,13 +407,17 @@
 							<img src="/games/laibart.png" alt="Laibart">
 							<h1>Laibart</h1>
 						</a>
+						<a href="https://parasite.warze.org/">
+							<img src="/games/parasite.png" alt="Parasite">
+							<h1>Parasite</h1>
+						</a>
 						<a href="https://kubipets.warze.org">
 							<img src="/games/kubipets.png" alt="Kubi Pets">
 							<h1>Kubi Pets</h1>
 						</a>
-						<a href="https://parasite.warze.org/">
-							<img src="/games/parasite.png" alt="Parasite">
-							<h1>Parasite</h1>
+						<a href="https://happywheels.warze.org" class="pcOnly">
+							<img src="/games/happywheels.jpg" alt="Happy Wheels">
+							<h1>Happy Wheels</h1>
 						</a>
 						<a href="https://flagquiz.warze.org/">
 							<img src="/games/flagquiz.png" alt="FlagQuiz">
@@ -411,6 +446,10 @@
 				</div>
 
 				<div id="models" class="subCategorySection hidden">
+					<div class="commentContainer">
+						<img src="/about/warzepoint.svg">
+						<p class="comment">Minecraft got me into 3D modeling using Blockbench, with which I enjoyed making custom hats, weapons and other objects for friends and clients. <a href="https://kofi.warze.org">I'm also taking commissions on Ko-Fi</a>.</p>
+					</div>
 					<div id="modelsFlex"></div>
 				</div>
 
@@ -418,76 +457,125 @@
 					<div class="post">
 						<span class="timestamp">June 2, 2024</span>
 	
-						<h1>DiscordChannelMerger</h1>
+						<h1>
+							<a href="https://gitea.warze.org/discordChannelMerger">
+								<img class="titleIcon" src="/icons/git.svg" alt="Discord Channel Merger on Gitea">
+							</a>
+							DiscordChannelMerger
+						</h1>
 	
 						<p>Discord Channel Merger is a bot script that takes all messages from multiple channels and sends them in one using webhooks.</p>
 						<p>It's a great way to merge channels together without losing any contents.</p>
-						<p>The code is available on <a href="https://gitea.warze.org/discordChannelMerger">GitHub</a> and it was used <a href="https://discord.warze.org">on my server</a>.</p>
 					</div>
 	
 					<div class="post">
 						<span class="timestamp">May 6, 2024</span>
 	
-						<h1>DiscordAIChars</h1>
+						<h1>
+							<a href="https://gitea.warze.org/discordAIChars">
+								<img class="titleIcon" src="/icons/git.svg" alt="Discord AI Characters on Gitea">
+							</a>
+							<a href="https://discord.warze.org">
+								<img class="titleIcon" src="/icons/discordwhite.svg" alt="Discord Server">
+							</a>
+							DiscordAIChars
+						</h1>
 	
 						<p>Discord AI Chars is a bot that can switch between models and send AI-generated messages via webhooks. It uses the Ollama library to generate the AI responses.</p>
 						<p>Users in your server have the ability to create and customize their characters and even have them talk to each other.</p>
-						<p>The code is available on <a href="https://gitea.warze.org/discordAIChars">my Gitea</a> but you can try it out with others <a href="https://discord.warze.org">on my server</a>.</p>
 	
 						<a href="https://gitea.warze.org/discordAIChars">
-							<img src="/news/discordAIChars.webp" data-full="/news/discordAIChars.png" alt="discordAIChars">
+							<img src="/news/discordAIChars.webp" data-full="/news/discordAIChars.png" alt="discordAIChars" class="cover">
 						</a>
 					</div>
 	
 					<div class="post">
 						<span class="timestamp">February 16, 2024</span>
 						
-						<h1>Message of the Hour</h1>
+						<h1>
+							<a href="https://gitea.warze.org/messageOfTheHour">
+								<img class="titleIcon" src="/icons/git.svg" alt="Message of the hour on Gitea">
+							</a>
+							<a href="https://discord.warze.org">
+								<img class="titleIcon" src="/icons/discordwhite.svg" alt="Discord Server">
+							</a>
+							Message of the Hour
+						</h1>
 						<p>This bot sends a message in a designated channel every hour. The pool of messages can be from any channel.</p>
-						<p>The code is available on <a href="https://gitea.warze.org/messageOfTheHour">my Gitea</a> but you can see it in action <a href="https://discord.warze.org">on my server</a>.</p>
 					</div>
 	
 					<div class="post">
 						<span class="timestamp">February 3, 2024</span>
 						
-						<h1>One Word Story</h1>
+						<h1>
+							<a href="https://gitea.warze.org/oneWordStoryBot">
+								<img class="titleIcon" src="/icons/git.svg" alt="One Word Story on Gitea">
+							</a>
+							<a href="https://discord.warze.org">
+								<img class="titleIcon" src="/icons/discordwhite.svg" alt="Discord Server">
+							</a>
+							One Word Story
+						</h1>
 						<p>This bot allows users to contribute to a story one word at a time. It's a fun way to create a story together.</p>
-						<p>The code is available on <a href="https://gitea.warze.org/oneWordStoryBot">my Gitea</a> but you can try it out with others <a href="https://discord.warze.org">on my server</a>.</p>
 					</div>
 	
 					<div class="post">
 						<span class="timestamp">January 27, 2024</span>
 	
-						<h1>Ollama Chatbot</h1>
+						<h1>
+							<a href="https://gitea.warze.org/discordOllama">
+								<img class="titleIcon" src="/icons/git.svg" alt="Discord Ollama on Gitea">
+							</a>
+							<a href="https://discord.warze.org">
+								<img class="titleIcon" src="/icons/discordwhite.svg" alt="Discord Server">
+							</a>
+							Ollama Chatbot
+						</h1>
 	
 						<p>This bot allows you to host and talk with LLMs right on Discord. It's very customizable and supports seeing tokens being generated in real time.</p>
-						<p>The code is available on <a href="https://gitea.warze.org/discordOllama">my Gitea</a> but you can try it out with others <a href="https://discord.warze.org">on my server</a>.</p>
 					</div>
 	
 					<div class="post">
 						<span class="timestamp">August 30, 2023</span>
 						
-						<h1>Code with JavaScript</h1>
+						<h1>
+							<a href="https://gitea.warze.org/codeBotJS">
+								<img class="titleIcon" src="/icons/git.svg" alt="codeBotJS on Gitea">
+							</a>
+							<a href="https://discord.warze.org">
+								<img class="titleIcon" src="/icons/discordwhite.svg" alt="Discord Server">
+							</a>
+							Code with JavaScript
+						</h1>
 						<p>Code Bot JS is a bot that allows you to run sandboxed JavaScript code in a Discord channel. It's a great way to test out code snippets and share them with others.</p>
 						<p>It also has APIs to create images and gifs with user input and even has a web interface at <a href="https://code.warze.org">code.warze.org</a>.</p>
-						<p>The code is available on <a href="https://gitea.warze.org/codeBotJS">my Gitea</a> but you can try the bot out <a href="https://discord.warze.org">on my server</a>.</p>
 					</div>
 	
 					<div class="post">
 						<span class="timestamp">April 28, 2023</span>
 						
-						<h1>Casino Games</h1>
+						<h1>
+							<a href="https://gitea.warze.org/warzeCasinoBot">
+								<img class="titleIcon" src="/icons/git.svg" alt="Warze's Casino Bot on Gitea">
+							</a>
+							<a href="https://discord.warze.org">
+								<img class="titleIcon" src="/icons/discordwhite.svg" alt="Discord Server">
+							</a>
+							Casino Games
+						</h1>
 						<p>Play games, earn currency, open chests and compete with others in a casino-themed bot for Discord.</p>
 						<p>It includes various games such as card games, connect 4 and coinflips.</p>
-						<p>The code is available on <a href="https://gitea.warze.org/warzeCasinoBot">GitHub</a> but you can try the bot out <a href="https://discord.warze.org">on my server</a>.</p>
 					</div>
 				</div>
 			</section>
 
 			
 			<section id="testimonials" class="hidden" style="opacity: 0">
-				<p id="testimonialheader">Want to be featured here? Write a message on <a href="https://kofi.warze.org">Ko-fi</a>, <a href="https://linkedin.warze.org">LinkedIn</a> or <a href="https://discord.warze.org">Discord</a>.</p>
-				
+				<div class="commentContainer">
+					<img src="/about/warzestretch.svg">
+					<p class="comment">Want to be featured here? Write a message on <a href="https://kofi.warze.org">Ko-fi</a>, <a href="https://linkedin.warze.org">LinkedIn</a> or <a href="https://discord.warze.org">Discord</a>. I appreciate you all for liking my work and supporting me :)</p>
+				</div>
+
 				<div class="testimonial">
 					<a href="https://linkedin.com/in/eriksombroek" target="_blank">
 						<img class="avatar" src="/testimonials/eriksombroek.jpg" alt="Erik Sombroek">
@@ -770,7 +858,7 @@
 		<!-- Footer -->
 		<footer></footer>
 
-		<div id="earthContainer"></div>
+		<a id="earthContainer" href="https://wartos.warze.org"></a>
 
 		<!-- Backgrounds -->
 		<!-- <img src="/backgrounds/bgblue.jpg" class="background" id="bgblue" alt="Blue Space Background">
@@ -824,11 +912,11 @@
 		</div>
 
 		<!-- Scripts -->
+		<script src='/js/gallery.js'></script>
 		<script src='/js/categories.js'></script>
 		<script src='/js/stars.js'></script>
 		<script src='/js/title.js'></script>
 		<script src='/js/nav.js'></script>
 		<script src='/js/index.js'></script>
-		<script src='/js/gallery.js' defer></script>
 	</body>
 </html>

@@ -1,5 +1,5 @@
 function updateClickableImages() {
-  document.querySelectorAll('img[data-full]').forEach(img => {
+  document.querySelectorAll('*[data-full]').forEach(img => {
     console.log(img.src);
 
     const full = img.dataset.full;

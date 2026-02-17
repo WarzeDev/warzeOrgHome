@@ -11,6 +11,7 @@
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	gap: 12px;
 }
 .gamegrid a {
 	border-radius: 16px;
@@ -21,7 +22,6 @@
 	flex-direction: column;
 	justify-content: center;
 	text-decoration: none;
-	margin: 6px;
 	gap: 6px;
 	padding: 2px;
 	transition: background-color 0.15s;
@@ -119,7 +119,6 @@
 
 #modelsFlex {
 	display: flex;
-	padding: 20px;
 	flex-wrap: wrap;
 	gap: 8px;
 }
@@ -139,5 +138,49 @@
 	#modelsFlex .modelContainer img {
 		width: 30vw;
 		height: 30vw;
+	}
+}
+
+.commentContainer {
+	display: flex;
+	gap: 12px;
+	margin-block: 20px;
+
+	img {
+		filter: drop-shadow(0 0 4px rgba(0, 0, 0, 1));
+	}
+
+	.comment {
+		padding: 12px;
+		border-radius: 12px;
+		background-color: rgba(0, 0, 0, 0.5);
+		box-shadow: inset 0 0 10px 5px rgba(0, 0, 0, 1);
+		max-width: 600px;
+		margin-block: 12px;
+		position: relative;
+
+		&::before {
+			content: "";
+			position: absolute;
+			left: -25px;
+			top: 38px;
+			width: 0;
+			height: 0;
+			border-top: 20px solid transparent;
+			border-bottom: 0px solid transparent;
+			border-right: 25px solid rgba(0, 0, 0, 0.5);
+			filter: drop-shadow(-2px 0 2px rgba(0, 0, 0, 1));
+		}
+	}
+}
+@media screen and (max-width: 600px) {
+	.commentContainer {
+		img {
+			display: none;
+		}
+
+		.comment::before {
+			display: none;
+		}
 	}
 }
