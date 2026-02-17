@@ -14,7 +14,7 @@
 		<link rel='stylesheet' type='text/css' href='/css/bio.css' defer>
 		<link rel='stylesheet' type='text/css' href='/css/gallery.css' defer>
 		<link rel='stylesheet' type='text/css' href='/css/post.css' defer>
-		<link rel='stylesheet' type='text/css' href='/css/games.css' defer>
+		<link rel='stylesheet' type='text/css' href='/css/mywork.css' defer>
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.7/viewer.min.js" integrity="sha512-lZD0JiwhtP4UkFD1mc96NiTZ14L7MjyX5Khk8PMxJszXMLvu7kjq1sp4bb0tcL6MY+/4sIuiUxubOqoueHrW4w==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.7/viewer.min.css" integrity="sha512-vRbASHFS0JiM4xwX/iqr9mrD/pXGnOP2CLdmXSSNAjLdgQVFyt4qI+BIoUW7/81uSuKRj0cWv3Dov8vVQOTHLw==" crossorigin="anonymous" referrerpolicy="no-referrer" defer/>
@@ -57,14 +57,11 @@
 					</svg>
 					Home
 				</button>
-				<button class="roundedButton category" data-category="posts" aria-label="posts">
+				<button class="roundedButton category" data-category="posts" aria-label="Posts">
 					Posts
 				</button>
-				<button class="roundedButton category" data-category="games" aria-label="Games">
-					Games
-				</button>
-				<button class="roundedButton category" data-category="discordbots" aria-label="Discord Bots">
-					Discord Bots
+				<button class="roundedButton category" data-category="mywork" aria-label="My Work">
+					My Work
 				</button>
 				<button class="roundedButton category" data-category="testimonials" aria-label="Testimonials">
 					Testimonials
@@ -91,11 +88,8 @@
 				<button class="category" data-category="posts">
 					Posts
 				</button>
-				<button class="category" data-category="games">
-					Games
-				</button>
-				<button class="category" data-category="discordbots">
-					Discord Bots
+				<button class="category" data-category="mywork">
+					My Work
 				</button>
 				<button class="category" data-category="testimonials">
 					Testimonials
@@ -316,186 +310,180 @@
 				</div>
 			</section>
 
-			<section id="games" class="hidden" style="opacity: 0">
-				<h2>Popular Games</h2>
-				<div class="gamegrid">
-					<a href="https://poki.com/en/g/jelly-venture">
-						<img src="/games/jelly.webp" alt="Jelly's Venture">
-						<h1>Jelly's Venture</h1>
-					</a>
-					<a href="https://doomed.io">
-						<img src="/games/doomed.png" alt="Doomed">
-						<h1>Doomed.io</h1>
-					</a>
-					<a href="https://jollyworld.app">
-						<img src="/games/jollyworld.png" alt="JollyWorld">
-						<h1>JollyWorld</h1>
-					</a>
-					<a href="https://lightson2.warze.org">
-						<img src="/games/lightson2.png" alt="Lights on! 2">
-						<h1>Lights on! 2</h1>
-					</a>
-					<a href="https://happywheels.warze.org" class="pcOnly">
-						<img src="/games/happywheels.jpg" alt="Happy Wheels">
-						<h1>Happy Wheels</h1>
-					</a>
-					<a href="https://icecream.warze.org">
-						<img src="/games/icecream.png" alt="Ice Cream Parlor">
-						<h1>Ice Cream</h1>
-					</a>
-					<a href="https://kubipets.warze.org">
-						<img src="/games/kubipets.png" alt="Kubi Pets">
-						<h1>Kubi Pets</h1>
-					</a>
+			<section id="mywork" class="hidden" style="opacity: 0">
+				<div id="subnav">
+					<button class="roundedButton subCategory selectedSubCategory" data-category="games" aria-label="Games">
+						Games
+					</button>
+					<button class="roundedButton subCategory" data-category="models" aria-label="3D Models">
+						3D Models
+					</button>
+					<button class="roundedButton subCategory" data-category="discordbots" aria-label="Discord Bots">
+						Discord Bots
+					</button>
 				</div>
-				<h2>Minigames</h2>
-				<div class="gamegrid">
-					<a href="https://lightson.warze.org">
-						<img src="/games/lightson.png" alt="Lights on!">
-						<h1>Lights on!</h1>
-					</a>
-					<!-- <a href="https://warze.org/casino" class="pcOnly">
-						<img src="/games/casino.png" alt="Casino">
-						<h1>Casino Hub</h1>
-					</a> -->
-					<a href="https://casino.warze.org/1" class="pcOnly">
-						<img src="/games/casino1.png" alt="Casino 1">
-						<h1>Hat Juggler</h1>
-					</a>
-					<a href="https://casino.warze.org/2">
-						<img src="/games/casino2.png" alt="Casino 2">
-						<h1>Picture Poker</h1>
-					</a>
-					<a href="https://casino.warze.org/3" class="pcOnly">
-						<img src="/games/casino3.png" alt="Casino 3">
-						<h1>Tower Jumper</h1>
-					</a>
-					<a href="https://laibart.warze.org/" class="pcOnly">
-						<img src="/games/laibart.png" alt="Laibart">
-						<h1>Laibart</h1>
-					</a>
-					<a href="https://parasite.warze.org/">
-						<img src="/games/parasite.png" alt="Parasite">
-						<h1>Parasite</h1>
-					</a>
-					<a href="https://flagquiz.warze.org/">
-						<img src="/games/flagquiz.png" alt="FlagQuiz">
-						<h1>Flag Quiz</h1>
-					</a>
-					<a href="https://reactidle.warze.org/">
-						<img src="/games/react.png" alt="React Idle">
-						<h1>React Idle</h1>
-					</a>
-				</div>
-				<h2>Game Remakes</h2>
-				<div class="gamegrid">
-					<a href="https://pushy.warze.org">
-						<img src="/games/pushy.png" alt="Pushy">
-						<h1>Pushy</h1>
-					</a>
-					<a href="https://snake.warze.org" class="pcOnly">
-						<img src="/games/snake.png" alt="Snake">
-						<h1>Snake</h1>
-					</a>
-					<a href="https://ball2.warze.org">
-						<img src="/games/ball2.png" alt="Ball 2">
-						<h1>Ball 2</h1>
-					</a>
-				</div>
-			</section>
-
-			<section id="discordbots" class="hidden" style="opacity: 0">
-				<div class="post">
-					<span class="timestamp">June 2, 2024</span>
-
-					<h1>DiscordChannelMerger</h1>
-
-					<p>Discord Channel Merger is a bot script that takes all messages from multiple channels and sends them in one using webhooks.</p>
-					<p>It's a great way to merge channels together without losing any contents.</p>
-					<p>The code is available on <a href="https://gitea.warze.org/discordChannelMerger">GitHub</a> and it was used <a href="https://discord.warze.org">on my server</a>.</p>
-
-					<a href="https://gitea.warze.org/discordChannelMerger.git">
-						<img src="/news/discordChannelMerger.webp" data-full="/news/DiscordChannelMerger.png" alt="discordChannelMerger">
-					</a>
+				<div id="games" class="subCategorySection">
+					<h2>Popular Games</h2>
+					<div class="gamegrid">
+						<a href="https://poki.com/en/g/jelly-venture">
+							<img src="/games/jelly.webp" alt="Jelly's Venture">
+							<h1>Jelly's Venture</h1>
+						</a>
+						<a href="https://doomed.io">
+							<img src="/games/doomed.png" alt="Doomed">
+							<h1>Doomed.io</h1>
+						</a>
+						<a href="https://jollyworld.app">
+							<img src="/games/jollyworld.png" alt="JollyWorld">
+							<h1>JollyWorld</h1>
+						</a>
+						<a href="https://lightson2.warze.org">
+							<img src="/games/lightson2.png" alt="Lights on! 2">
+							<h1>Lights on! 2</h1>
+						</a>
+						<a href="https://happywheels.warze.org" class="pcOnly">
+							<img src="/games/happywheels.jpg" alt="Happy Wheels">
+							<h1>Happy Wheels</h1>
+						</a>
+						<a href="https://icecream.warze.org">
+							<img src="/games/icecream.png" alt="Ice Cream Parlor">
+							<h1>Ice Cream</h1>
+						</a>
+					</div>
+					<h2>Minigames</h2>
+					<div class="gamegrid">
+						<a href="https://lightson.warze.org">
+							<img src="/games/lightson.png" alt="Lights on!">
+							<h1>Lights on!</h1>
+						</a>
+						<!-- <a href="https://warze.org/casino" class="pcOnly">
+							<img src="/games/casino.png" alt="Casino">
+							<h1>Casino Hub</h1>
+						</a> -->
+						<a href="https://casino.warze.org/1" class="pcOnly">
+							<img src="/games/casino1.png" alt="Casino 1">
+							<h1>Hat Juggler</h1>
+						</a>
+						<a href="https://casino.warze.org/2">
+							<img src="/games/casino2.png" alt="Casino 2">
+							<h1>Picture Poker</h1>
+						</a>
+						<a href="https://casino.warze.org/3" class="pcOnly">
+							<img src="/games/casino3.png" alt="Casino 3">
+							<h1>Tower Jumper</h1>
+						</a>
+						<a href="https://laibart.warze.org/" class="pcOnly">
+							<img src="/games/laibart.png" alt="Laibart">
+							<h1>Laibart</h1>
+						</a>
+						<a href="https://kubipets.warze.org">
+							<img src="/games/kubipets.png" alt="Kubi Pets">
+							<h1>Kubi Pets</h1>
+						</a>
+						<a href="https://parasite.warze.org/">
+							<img src="/games/parasite.png" alt="Parasite">
+							<h1>Parasite</h1>
+						</a>
+						<a href="https://flagquiz.warze.org/">
+							<img src="/games/flagquiz.png" alt="FlagQuiz">
+							<h1>Flag Quiz</h1>
+						</a>
+						<a href="https://reactidle.warze.org/">
+							<img src="/games/react.png" alt="React Idle">
+							<h1>React Idle</h1>
+						</a>
+					</div>
+					<h2>Game Remakes</h2>
+					<div class="gamegrid">
+						<a href="https://pushy.warze.org">
+							<img src="/games/pushy.png" alt="Pushy">
+							<h1>Pushy</h1>
+						</a>
+						<a href="https://snake.warze.org" class="pcOnly">
+							<img src="/games/snake.png" alt="Snake">
+							<h1>Snake</h1>
+						</a>
+						<a href="https://ball2.warze.org">
+							<img src="/games/ball2.png" alt="Ball 2">
+							<h1>Ball 2</h1>
+						</a>
+					</div>
 				</div>
 
-				<div class="post">
-					<span class="timestamp">May 6, 2024</span>
-
-					<h1>DiscordAIChars</h1>
-
-					<p>Discord AI Chars is a bot that can switch between models and send AI-generated messages via webhooks. It uses the Ollama library to generate the AI responses.</p>
-					<p>Users in your server have the ability to create and customize their characters and even have them talk to each other.</p>
-					<p>The code is available on <a href="https://gitea.warze.org/discordAIChars">my Gitea</a> but you can try it out with others <a href="https://discord.warze.org">on my server</a>.</p>
-
-					<a href="https://gitea.warze.org/discordAIChars">
-						<img src="/news/discordAIChars.webp" data-full="/news/discordAIChars.png" alt="discordAIChars">
-					</a>
+				<div id="models" class="subCategorySection hidden">
+					<div id="modelsFlex"></div>
 				</div>
 
-				<div class="post">
-					<span class="timestamp">February 16, 2024</span>
-					
-					<h1>Message of the Hour</h1>
-					<p>This bot sends a message in a designated channel every hour. The pool of messages can be from any channel.</p>
-					<p>The code is available on <a href="https://gitea.warze.org/messageOfTheHour">my Gitea</a> but you can see it in action <a href="https://discord.warze.org">on my server</a>.</p>
-
-					<a href="https://gitea.warze.org/messageOfTheHour">
-						<img src="/news/messageOfTheHour.webp" data-full="/news/messageOfTheHour.png" alt="messageOfTheHour">
-					</a>
-				</div>
-
-				<div class="post">
-					<span class="timestamp">February 3, 2024</span>
-					
-					<h1>One Word Story</h1>
-					<p>This bot allows users to contribute to a story one word at a time. It's a fun way to create a story together.</p>
-					<p>The code is available on <a href="https://gitea.warze.org/oneWordStoryBot">my Gitea</a> but you can try it out with others <a href="https://discord.warze.org">on my server</a>.</p>
-
-					<a href="https://gitea.warze.org/oneWordStoryBot">
-						<img src="/news/oneWordStoryBot.webp" data-full="/news/oneWordStoryBot.png" alt="oneWordStoryBot">
-					</a>
-				</div>
-
-				<div class="post">
-					<span class="timestamp">January 27, 2024</span>
-
-					<h1>Ollama Chatbot</h1>
-
-					<p>This bot allows you to host and talk with LLMs right on Discord. It's very customizable and supports seeing tokens being generated in real time.</p>
-					<p>The code is available on <a href="https://gitea.warze.org/discordOllama">my Gitea</a> but you can try it out with others <a href="https://discord.warze.org">on my server</a>.</p>
-
-					<a href="https://gitea.warze.org/discordOllama">
-						<img src="/news/discordOllama.webp" data-full="/news/discordOllama.png" alt="Discord Ollama AI Bot">
-					</a>
-				</div>
-
-				<div class="post">
-					<span class="timestamp">August 30, 2023</span>
-					
-					<h1>Code with JavaScript</h1>
-					<p>Code Bot JS is a bot that allows you to run sandboxed JavaScript code in a Discord channel. It's a great way to test out code snippets and share them with others.</p>
-					<p>It also has APIs to create images and gifs with user input and even has a web interface at <a href="https://code.warze.org">code.warze.org</a>.</p>
-					<p>The code is available on <a href="https://gitea.warze.org/codeBotJS">my Gitea</a> but you can try the bot out <a href="https://discord.warze.org">on my server</a>.</p>
-
-					<a href="https://gitea.warze.org/codeBotJS">
-						<img src="/news/codeBotJS.webp" data-full="/news/codeBotJS.png" alt="codeBotJS">
-					</a>
-				</div>
-
-				<div class="post">
-					<span class="timestamp">April 28, 2023</span>
-					
-					<h1>Casino Games</h1>
-					<p>Play games, earn currency, open chests and compete with others in a casino-themed bot for Discord.</p>
-					<p>It includes various games such as card games, connect 4 and coinflips.</p>
-					<p>The code is available on <a href="https://gitea.warze.org/warzeCasinoBot">GitHub</a> but you can try the bot out <a href="https://discord.warze.org">on my server</a>.</p>
-
-					<a href="https://gitea.warze.org/warzeCasinoBot">
-						<img src="/news/warzeCasinoBot.webp" data-full="/news/warzeCasinoBot.png" alt="Warze's Casino Bot for Discord">
-					</a>
+				<div id="discordbots" class="subCategorySection hidden">
+					<div class="post">
+						<span class="timestamp">June 2, 2024</span>
+	
+						<h1>DiscordChannelMerger</h1>
+	
+						<p>Discord Channel Merger is a bot script that takes all messages from multiple channels and sends them in one using webhooks.</p>
+						<p>It's a great way to merge channels together without losing any contents.</p>
+						<p>The code is available on <a href="https://gitea.warze.org/discordChannelMerger">GitHub</a> and it was used <a href="https://discord.warze.org">on my server</a>.</p>
+					</div>
+	
+					<div class="post">
+						<span class="timestamp">May 6, 2024</span>
+	
+						<h1>DiscordAIChars</h1>
+	
+						<p>Discord AI Chars is a bot that can switch between models and send AI-generated messages via webhooks. It uses the Ollama library to generate the AI responses.</p>
+						<p>Users in your server have the ability to create and customize their characters and even have them talk to each other.</p>
+						<p>The code is available on <a href="https://gitea.warze.org/discordAIChars">my Gitea</a> but you can try it out with others <a href="https://discord.warze.org">on my server</a>.</p>
+	
+						<a href="https://gitea.warze.org/discordAIChars">
+							<img src="/news/discordAIChars.webp" data-full="/news/discordAIChars.png" alt="discordAIChars">
+						</a>
+					</div>
+	
+					<div class="post">
+						<span class="timestamp">February 16, 2024</span>
+						
+						<h1>Message of the Hour</h1>
+						<p>This bot sends a message in a designated channel every hour. The pool of messages can be from any channel.</p>
+						<p>The code is available on <a href="https://gitea.warze.org/messageOfTheHour">my Gitea</a> but you can see it in action <a href="https://discord.warze.org">on my server</a>.</p>
+					</div>
+	
+					<div class="post">
+						<span class="timestamp">February 3, 2024</span>
+						
+						<h1>One Word Story</h1>
+						<p>This bot allows users to contribute to a story one word at a time. It's a fun way to create a story together.</p>
+						<p>The code is available on <a href="https://gitea.warze.org/oneWordStoryBot">my Gitea</a> but you can try it out with others <a href="https://discord.warze.org">on my server</a>.</p>
+					</div>
+	
+					<div class="post">
+						<span class="timestamp">January 27, 2024</span>
+	
+						<h1>Ollama Chatbot</h1>
+	
+						<p>This bot allows you to host and talk with LLMs right on Discord. It's very customizable and supports seeing tokens being generated in real time.</p>
+						<p>The code is available on <a href="https://gitea.warze.org/discordOllama">my Gitea</a> but you can try it out with others <a href="https://discord.warze.org">on my server</a>.</p>
+					</div>
+	
+					<div class="post">
+						<span class="timestamp">August 30, 2023</span>
+						
+						<h1>Code with JavaScript</h1>
+						<p>Code Bot JS is a bot that allows you to run sandboxed JavaScript code in a Discord channel. It's a great way to test out code snippets and share them with others.</p>
+						<p>It also has APIs to create images and gifs with user input and even has a web interface at <a href="https://code.warze.org">code.warze.org</a>.</p>
+						<p>The code is available on <a href="https://gitea.warze.org/codeBotJS">my Gitea</a> but you can try the bot out <a href="https://discord.warze.org">on my server</a>.</p>
+					</div>
+	
+					<div class="post">
+						<span class="timestamp">April 28, 2023</span>
+						
+						<h1>Casino Games</h1>
+						<p>Play games, earn currency, open chests and compete with others in a casino-themed bot for Discord.</p>
+						<p>It includes various games such as card games, connect 4 and coinflips.</p>
+						<p>The code is available on <a href="https://gitea.warze.org/warzeCasinoBot">GitHub</a> but you can try the bot out <a href="https://discord.warze.org">on my server</a>.</p>
+					</div>
 				</div>
 			</section>
+
 			
 			<section id="testimonials" class="hidden" style="opacity: 0">
 				<p id="testimonialheader">Want to be featured here? Write a message on <a href="https://kofi.warze.org">Ko-fi</a>, <a href="https://linkedin.warze.org">LinkedIn</a> or <a href="https://discord.warze.org">Discord</a>.</p>

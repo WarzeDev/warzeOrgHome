@@ -1,3 +1,6 @@
+#mywork {
+	width: 100%;
+}
 #games {
 	h2::before {
 		content: "⟶";
@@ -73,5 +76,68 @@
 				line-height: 5.5vw;
 			}
 		}
+	}
+}
+
+.subCategory {
+	transition: all 0.3s;
+}
+
+.selectedSubCategory {
+	color: var(--highlight);
+	transform: translateY(-5px) scale(0.95);
+	pointer-events: none;
+}
+
+.subCategorySection.hidden {
+	display: none;
+}
+
+.modelContainer {
+	border-radius: 12px;
+	background-color: rgba(0, 0, 0, 0.5);
+	box-shadow: inset 0 0 10px 5px rgba(0, 0, 0, 0.5);
+	padding: 10px;
+	text-align: center;
+
+	img {
+		width: 220px;
+		height: 220px;
+		cursor: pointer;
+		transition: transform 0.3s;
+
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+
+	p {
+		font-size: 14px;
+		color: rgb(200, 200, 200);
+	}
+}
+
+#modelsFlex {
+	display: flex;
+	padding: 20px;
+	flex-wrap: wrap;
+	gap: 8px;
+}
+
+@media screen and (max-width: 1150px) {
+	#modelsFlex {
+		justify-content: center;
+		
+		.modelContainer img {
+			width: 25vw;
+			height: 25vw;
+		}
+	}
+}
+
+@media screen and (max-width: 800px) {
+	#modelsFlex .modelContainer img {
+		width: 30vw;
+		height: 30vw;
 	}
 }

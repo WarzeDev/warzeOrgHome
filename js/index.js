@@ -138,3 +138,80 @@ function loadEarthVideo() {
 
 // Load earth video
 window.addEventListener('load', loadEarthVideo);
+
+// Make all sub categories clickable
+document.querySelectorAll('.subCategory').forEach((category) => {
+	category.addEventListener('click', (e) => {
+		document.querySelectorAll('.selectedSubCategory').forEach((category) => {
+			category.classList.remove('selectedSubCategory');
+		});
+
+		e.target.classList.add('selectedSubCategory');
+
+		document.querySelectorAll('.subCategorySection').forEach((section) => {
+			section.classList.add('hidden');
+		});
+
+		const newCategory = e.target.dataset.category;
+
+		document.getElementById(newCategory).classList.remove('hidden');
+
+		if (newCategory === 'models') {
+			setupModelImages();
+		}
+	});
+});
+
+let modelImagesSetup = false;
+function setupModelImages() {
+	if (modelImagesSetup) return;
+
+	modelImagesSetup = true;
+
+
+	const models = [
+		'Acrobat Katana',
+		'Amorrya Mask',
+		'Bunny Totem',
+		'Crystal Totem',
+		'Freaky Pumpkin',
+		'Ice Dagger',
+		'Ice Totem',
+		'Mario Top Hat',
+		'Millies Axe',
+		'Mimikyu Winter Hat',
+		'Moth Antennae',
+		'Nether Totem',
+		'Red Spear',
+		'Squidward Totem',
+		'Tinee Horns',
+		'Tinee Scythe',
+		'Tinee Stave',
+		'Wingul Hat',
+		'Winter Hood'
+	];
+
+	const modelParentContainer = document.getElementById('modelsFlex');
+
+	models.forEach((model) => {
+		const modelContainer = document.createElement('div');
+		modelContainer.classList.add('modelContainer');
+
+		const img = document.createElement('img');
+		const modelPath = model.toLowerCase().replaceAll(' ', '');
+		img.src = `/models/webp/${modelPath}.webp`;
+		img.alt = model;
+		img.setAttribute('data-full', `/models/apng/${modelPath}.png`);
+		modelContainer.appendChild(img);
+
+		const p = document.createElement('p');
+		p.innerText = model;
+		modelContainer.appendChild(p);
+
+		modelParentContainer.appendChild(modelContainer);
+	});
+
+	updateClickableImages();
+}
+
+updateClickableImages();

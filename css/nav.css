@@ -89,3 +89,21 @@ nav {
 	color: var(--highlight);
 	background-color: rgb(0 0 0 / 0.8) !important;
 }
+#subnav {
+	margin-top: 12px;
+	padding: 8px;
+	display: flex;
+
+	button {
+		text-wrap: nowrap;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	#subnav {
+		flex-direction: column;
+	}
+	.selectedSubCategory {
+		transform: none !important;
+	}
+}

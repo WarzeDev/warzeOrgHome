@@ -13,25 +13,25 @@ const categories = {
 		background: 'pink',
 		stars: [50, 20]
 	},
-	games: {
+	mywork: {
 		hueShift: 60,
 		color: '#A55ADB',
-		title: 'Games',
+		title: 'My Work',
 		background: 'purple',
-		stars: [20, 30]
+		stars: [20, 50]
 	},
-	discordbots: {
+	// discordbots: {
+	// 	hueShift: -80,
+	// 	color: 'rgb(20, 255, 20)',
+	// 	title: 'Discord Bots',
+	// 	background: 'green',
+	// 	stars: [30, 40]
+	// },
+	testimonials: {
 		hueShift: -80,
 		color: 'rgb(20, 255, 20)',
-		title: 'Discord Bots',
-		background: 'green',
-		stars: [30, 40]
-	},
-	testimonials: {
-		hueShift: -40,
-		color: '#44fff3',
 		title: 'Testimonials',
-		background: 'aqua',
+		background: 'green',
 		stars: [40, 0]
 	},
 	bio: {
@@ -42,10 +42,10 @@ const categories = {
 		stars: [0, 20]
 	},
 	gallery: {
-		hueShift: 60,
-		color: '#965dff',
+		hueShift: -40,
+		color: '#49ceff',
 		title: 'Gallery',
-		background: 'magenta',
-		stars: [0, 50]
+		background: 'aqua',
+		stars: [20, 50]
 	}
 }

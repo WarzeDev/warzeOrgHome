@@ -2,7 +2,7 @@
 	--highlight: rgb(255, 20, 20);
 	--newspost: #ff38a5;
 	--bio: #449eff;
-	--botpost: #26C819;
+	--botpost: #aa13be;
 }
 
 @font-face {
@@ -127,8 +127,7 @@ section.hidden {
 	transition: border-color 0.3s, letter-spacing 0.5s, color 0.3s;
 	font-weight: 700;
 }
-.roundedButton#selectedCategory {
-	letter-spacing: 1.2px;
+.roundedButton.selectedCategory {
 	color: var(--highlight);
 }
 .roundedButton #warzeOrgLogo {
