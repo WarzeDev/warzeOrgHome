@@ -56,6 +56,10 @@ function selectCategory(category) {
 	} else {
 		earth.style.filter = `hue-rotate(${hueShift}deg)`;
 	}
+
+	if (category === 'gallery') {
+		populateGallery();
+	}
 }
 
 function moveUnderlineToElement() {
