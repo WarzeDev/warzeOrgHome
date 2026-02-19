@@ -83,3 +83,13 @@
 		}
 	}
 }
+
+@media screen and (max-width: 500px) {
+	#heroInfoContainer {
+		flex-direction: column;
+
+		#heroInfoDivider {
+			display: none;
+		}
+	}
+}

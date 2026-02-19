@@ -14,7 +14,7 @@
 #bio #bioImgSmall {
 	display: none;
 	max-height: 320px;
-	max-width: 320px;
+	max-width: min(320px, 100%);
 	border-radius: 50%;
 	box-shadow: 0 0 10px 10px rgba(7, 48, 69, 0.5);
 }

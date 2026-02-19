@@ -114,7 +114,7 @@
 	}
 
 	p {
-		font-size: 14px;
+		font-size: min(14px, 3vw);
 		color: rgb(200, 200, 200);
 	}
 
@@ -137,6 +137,13 @@
 }
 
 @media screen and (max-width: 1150px) {
+	.modelContainer img {
+		width: 20vw;
+		height: 20vw;
+	}
+}
+
+@media screen and (max-width: 900px) {
 	#modelsFlex {
 		justify-content: center;
 		
@@ -147,10 +154,13 @@
 	}
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
+	#modelsFlex {
+		gap: 4px;
+	}
 	#modelsFlex .modelContainer img {
-		width: 30vw;
-		height: 30vw;
+		width: 35vw;
+		height: 35vw;
 	}
 }
 
