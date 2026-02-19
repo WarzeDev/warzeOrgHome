@@ -100,7 +100,7 @@
 	display: flex;
 	gap: 12px;
 	flex-wrap: wrap;
-	margin-top: 20px;
+	margin-block: 32px;
 	width: 844px;
 }
 .heroPost {
@@ -151,7 +151,10 @@
 			opacity: 0;
 			transition: all 0.3s;
 		}
+	}
 
+	h1 {
+		margin-block: 0.25em;
 	}
 
 	&:hover img {

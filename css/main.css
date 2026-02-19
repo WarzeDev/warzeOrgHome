@@ -17,10 +17,16 @@
 	font-weight: 700;
 	font-display: swap;
 }
-* {
-	box-sizing: border-box;
-	font-family: "Geist", sans-serif;
-	color: white;
+@font-face {
+	font-family: Mosvita;
+	src: url('/fonts/Mosvita-Bold.woff') format('woff2')
+}
+
+h1 {
+	font-family: 'Mosvita', sans-serif;
+}
+h2, p, span {
+	font-family: 'Geist', sans-serif;
 }
 h1, h2 {
 	font-weight: 700;
@@ -39,13 +45,14 @@ h1, h2 {
 	border-radius: 5px;
 }
 
-/* Firefox */
 * {
 	scrollbar-width: auto;
 	scrollbar-color: var(--highlight) #f1f1f1;
 	transition: filter 0.3s;
 	background-color: transparent;
 	border: none;
+	box-sizing: border-box;
+	color: white;
 }
 
 
@@ -138,6 +145,9 @@ section.hidden {
 }
 .roundedButton:hover {
 	border-color: rgba(255, 255, 255, 0.8);
+}
+#title {
+	font-family: "Mosvita", sans-serif;
 }
 @media screen and (max-width: 1150px) {
 	main {
