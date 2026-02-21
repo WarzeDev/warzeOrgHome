@@ -21,7 +21,7 @@ function getSelectedCategoryButton() {
 let underlinedElementPosition = getSelectedCategoryButton().getBoundingClientRect();
 
 function showCategory(category) {
-	const categoryElement = document.getElementById(category);
+	const categoryElement = document.querySelector(`[data-sectionid="${category}"]`);
 	categoryElement.classList.remove('hidden');
 	setTimeout(() => {
 		categoryElement.style.opacity = 1;
@@ -29,7 +29,7 @@ function showCategory(category) {
 }
 
 function hideCategory(category) {
-	const categoryElement = document.getElementById(category);
+	const categoryElement = document.querySelector(`[data-sectionid="${category}"]`);
 	categoryElement.style.opacity = 0;
 	setTimeout(() => {
 		categoryElement.classList.add('hidden');

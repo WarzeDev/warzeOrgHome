@@ -111,7 +111,7 @@
 				<span id="titleText">Home</span><div id="titleCursor"></div>
 			</h1>
 
-			<section id="home">
+			<section data-sectionid="home">
 				<div id="hero">
 					<div id="heroAvatar" data-full="/gallery/sadobunny/warzesadobunnypfp.png">
 						<svg width="128" height="128" viewBox="0 0 128 128">
@@ -188,7 +188,7 @@
 				</div>
 			</section>
 
-			<section id="posts" class="hidden" style="opacity: 0">
+			<section data-sectionid="posts" class="hidden" style="opacity: 0">
 				<div class="post">
 					<span class="timestamp">Feb 16, 2026</span>
 
@@ -434,10 +434,13 @@
 				</div>
 			</section>
 
-			<section id="mywork" class="hidden" style="opacity: 0">
+			<section data-sectionid="mywork" class="hidden" style="opacity: 0">
 				<div id="subnav">
 					<button class="roundedButton subCategory selectedSubCategory" data-category="games" aria-label="Games">
 						Games
+					</button>
+					<button class="roundedButton subCategory" data-category="websites" aria-label="Websites">
+						Websites
 					</button>
 					<button class="roundedButton subCategory" data-category="models" aria-label="Blockbench">
 						Blockbench
@@ -536,6 +539,10 @@
 							<h1>Ball 2</h1>
 						</a>
 					</div>
+				</div>
+
+				<div id="websites" class="subCategorySection hidden">
+
 				</div>
 
 				<div id="models" class="subCategorySection hidden">
@@ -663,7 +670,7 @@
 			</section>
 
 			
-			<section id="testimonials" class="hidden" style="opacity: 0">
+			<section data-sectionid="testimonials" class="hidden" style="opacity: 0">
 				<div class="commentContainer">
 					<img src="/about/warzestretch.svg">
 					<p class="comment">Want to be featured here? Write a message on <a href="https://kofi.warze.org" style="color: #FF5E5B">Ko-Fi</a>, <a href="https://linkedin.warze.org" style="color: #0E76A8">LinkedIn</a> or <a href="https://discord.warze.org" style="color: #7289da">Discord</a>. I appreciate you all for liking my work and supporting me :)</p>
@@ -801,7 +808,7 @@
 
 			</section>
 
-			<section id="bio" class="hidden" style="opacity: 0">
+			<section data-sectionid="bio" class="hidden" style="opacity: 0">
 				<img id="bioImgLarge" src="/about/leo2_zoom_arrow.webp" alt="Leonhard Tissen">
 				<img id="bioImgSmall" src="/about/leo2_zoom_normal_320px.webp" alt="Leonhard Tissen">
 				<div class="text">
@@ -816,7 +823,7 @@
 				</div>
 			</section>
 
-			<section id="gallery" class="hidden" style="opacity: 0">
+			<section data-sectionid="gallery" class="hidden" style="opacity: 0">
 				<div class="commentContainer">
 					<img src="/about/warzewave.svg" style="transform: scaleX(-1)">
 					<p class="comment" style="max-width: 586px">Over the years, I've received many amazing pieces of art of my character and I felt I needed to show them off. Please check out their respective artists!</p>

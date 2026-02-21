@@ -2,6 +2,8 @@
 	width: 100%;
 }
 #games {
+	max-width: 1200px;
+	
 	h2::before {
 		content: "⟶";
 		margin-right: 8px;

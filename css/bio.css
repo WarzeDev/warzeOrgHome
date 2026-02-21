@@ -1,4 +1,4 @@
-#bio {
+section[data-sectionid="bio"] {
 	margin-block: 20px;
 	padding: 20px;
 	background-color: rgba(0, 0, 0, 0.5);
@@ -6,35 +6,35 @@
 	border-radius: 20px;
 	display: flex;
 }
-#bio #bioImgLarge {
+section[data-sectionid="bio"] #bioImgLarge {
 	max-width: 130px;
 	max-height: 396px;
 	margin-right: 8px;
 }
-#bio #bioImgSmall {
+section[data-sectionid="bio"] #bioImgSmall {
 	display: none;
 	max-height: 320px;
 	max-width: min(320px, 100%);
 	border-radius: 50%;
 	box-shadow: 0 0 10px 10px rgba(7, 48, 69, 0.5);
 }
-#bio h1 {
+section[data-sectionid="bio"] h1 {
 	text-align: center;
 }
-#bio p {
+section[data-sectionid="bio"] p {
 	margin-block: 0.5em;
 }
-#bio a {
+section[data-sectionid="bio"] a {
 	color: var(--bio);
 }
 @media screen and (max-width: 1150px) {
-	#bio #bioImgLarge {
+	section[data-sectionid="bio"] #bioImgLarge {
 		display: none;
 	}
-	#bio #bioImgSmall {
+	section[data-sectionid="bio"] #bioImgSmall {
 		display: block;
 	}
-	#bio {
+	section[data-sectionid="bio"] {
 		flex-direction: column;
 		align-items: center;
 	}

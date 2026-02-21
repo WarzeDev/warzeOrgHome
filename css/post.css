@@ -1,4 +1,4 @@
-#posts, #discordbots {
+section[data-sectionid="posts"], section[data-sectionid="discordbots"] {
 	padding-bottom: 300px;
 }
 .post {
@@ -36,7 +36,7 @@
 	height: 100%;
 	transform: translateX(5px);
 }
-#posts .post::before {
+section[data-sectionid="posts"] .post::before {
 	background-color: var(--newspost);
 	box-shadow: 0px 0px 4px var(--newspost);
 }
@@ -82,7 +82,7 @@ p {
 	}
 }
 @media screen and (min-width: 1450px) {
-	#posts, #discordbots {
+	section[data-sectionid="posts"], section[data-sectionid="discordbots"] {
 		width: 100%;
 	}
 	.post {
