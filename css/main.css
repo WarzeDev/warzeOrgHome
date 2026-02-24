@@ -100,7 +100,7 @@ main {
 	main {
 		left: 60px;
 		width: calc(100% - 70px);
-		top: 80px;
+		top: 100px;
 		height: calc(100vh - 80px);
 	}
 }
@@ -149,11 +149,11 @@ section.hidden {
 #title {
 	font-family: "Mosvita", sans-serif;
 }
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 800px) {
 	main {
 		#title {
 			position: fixed;
-			transform: translate(24px, -55px);
+			transform: translate(24px, -80px);
 		}
 		section {
 			transform: translateY(-50px);
@@ -163,7 +163,7 @@ section.hidden {
 @media screen and (max-width: 600px) {
 	main {
 		#title {
-			transform: translate(74px, -55px);
+			transform: translate(74px, -80px);
 		}
 	}
 }

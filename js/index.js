@@ -59,6 +59,8 @@ function selectCategory(category) {
 
 	if (category === 'gallery') {
 		populateGallery();
+	} else if (category === 'testimonials') {
+		populateTestimonials();
 	}
 }
 
@@ -165,6 +167,27 @@ document.querySelectorAll('.subCategory').forEach((category) => {
 		if (newCategory === 'models') {
 			setupModelImages();
 		}
+	});
+});
+
+document.querySelectorAll(".heroVideoContainer").forEach(container => {
+	const video = container.querySelector("video");
+	const source = video.querySelector("source");
+	let loaded = false;
+
+	container.addEventListener("mouseenter", () => {
+		if (!loaded) {
+			source.src = source.dataset.src;
+			video.load();
+			loaded = true;
+		}
+		video.style.display = "block";
+		video.play();
+	});
+
+	container.addEventListener("mouseleave", () => {
+		video.pause();
+		video.style.display = "none";
 	});
 });
 
