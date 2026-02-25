@@ -101,14 +101,6 @@ document.querySelectorAll('.category').forEach((category) => {
 	});
 });
 
-// Hide PC only games if on mobile
-if ('ontouchstart' in window) {
-	document.querySelectorAll('.pcOnly').forEach((element) => {
-		element.remove();
-	});
-	earth.remove();
-}
-
 // Make thumbnails turn into youtube embeds on click
 document.querySelectorAll('.thumb').forEach((thumbnail) => {
 	thumbnail.addEventListener('click', (e) => {

@@ -1,7 +1,13 @@
+:root {
+	--line: rgb(212, 153, 183);
+	--year: rgb(184, 33, 176);
+}
+
 section[data-sectionid="posts"] {
 	padding-left: 20px;
 	margin-left: 20px;
-	border-left: 3px solid rgba(0, 0, 0, 0.295);
+	border-left: 3px solid var(--line);
+	background: linear-gradient(90deg, rgba(212, 153, 183, 0.15), #00000000 20px);
 
 	.post::before {
 		content: '';
@@ -10,11 +16,11 @@ section[data-sectionid="posts"] {
 		right: 100%;
 		width: 30px;
 		height: 3px;
-		background-color: rgb(0, 0, 0, 0.295);
+		background-color: var(--line);
 	}
 
 	.year {
-		color: rgb(177, 12, 114);
+		color: var(--year);
 		position: relative;
 		
 		&::before {
@@ -22,11 +28,12 @@ section[data-sectionid="posts"] {
 			margin-right: 8px;
 			width: 14px;
 			height: 14px;
-			background-color: rgb(92, 15, 88);
+			background-color: var(--year);
 			border-radius: 50%;
 			position: absolute;
 			left: -28px;
 			top: 10px;
+			outline: 3px solid var(--line);
 		}
 	}
 }
@@ -51,7 +58,7 @@ section[data-sectionid="posts"] {
 		align-items: center;
 		justify-content: right;
 		height: 28px;
-		margin: 12px 4px;
+		margin: 12px 12px;
 		z-index: 2;
 
 		a {
@@ -115,7 +122,7 @@ p {
 	section[data-sectionid="posts"], section[data-sectionid="discordbots"] {
 		width: 100%;
 	}
-	.post {
+	.post:has(.cover) {
 		min-height: 330px;
 	}
 	.post h1, .post p {

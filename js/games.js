@@ -9,9 +9,17 @@ async function setupGames() {
 
     games.forEach((game) => {
         const target = Array.from(targets).find(t => t.dataset.gamecategory === game.category);
-        target.innerHTML += `<a href="${game.url}">
+        target.innerHTML += `<a href="${game.url}" style="--gamecolor: ${game.color}50">
             <img src="${game.icon}" alt="${game.name}">
             <h1>${game.name}</h1>
         </a>`;
     });
+
+    // Hide PC only games if on mobile
+    if ('ontouchstart' in window) {
+        document.querySelectorAll('.pcOnly').forEach((element) => {
+            element.remove();
+        });
+        earth.remove();
+    }
 }

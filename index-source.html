@@ -196,6 +196,20 @@
 							Browse all of my projects in an immersive OS-like experience with floating windows
 						</span>
 					</a>
+
+					<a class="heroPost" href="https://warze.org/permaplace" style="--highlight: #ff808020">
+						<div class="heroVideoContainer">
+							<img src="/videos/permaplacethumbnail.webp" alt="Permaplace Thumbnail" fetchpriority="high">
+							<video muted playsinline preload="none">
+								<source data-src="/videos/permaplacepreviewsmall.mp4" type="video/mp4">
+							</video>
+							<span class="hovertext">Visit!</span>
+						</div>
+						<h1>Permaplace</h1>
+						<span class="description">
+							The place where every pixel lasts a lifetime. Solidify your art on a giant canvas or create rooms with others.
+						</span>
+					</a>
 				</div>
 			</section>
 
@@ -483,9 +497,9 @@
 					<button class="roundedButton subCategory selectedSubCategory" data-category="games" aria-label="Games">
 						Games
 					</button>
-					<button class="roundedButton subCategory" data-category="websites" aria-label="Websites">
+					<!-- <button class="roundedButton subCategory" data-category="websites" aria-label="Websites">
 						Websites
-					</button>
+					</button> -->
 					<button class="roundedButton subCategory" data-category="models" aria-label="Blockbench">
 						Blockbench
 					</button>
@@ -494,17 +508,23 @@
 					</button>
 				</div>
 				<div id="games" class="subCategorySection">
-					<h2>Popular Games</h2>
-					<div class="gamegrid" data-gamecategory="Popular Games"></div>
-					<h2>Minigames</h2>
-					<div class="gamegrid" data-gamecategory="Minigames"></div>
-					<h2>Game Remakes</h2>
-					<div class="gamegrid" data-gamecategory="Game Remakes"></div>
+					<div class="gameCategoryContainer">
+						<h2>Popular Games</h2>
+						<div class="gamegrid" data-gamecategory="Popular Games"></div>
+					</div>
+					<div class="gameCategoryContainer">
+						<h2>Minigames</h2>
+						<div class="gamegrid" data-gamecategory="Minigames"></div>
+					</div>
+					<div class="gameCategoryContainer">
+						<h2>Game Remakes</h2>
+						<div class="gamegrid" data-gamecategory="Game Remakes"></div>
+					</div>
 				</div>
 
-				<div id="websites" class="subCategorySection hidden">
+				<!-- <div id="websites" class="subCategorySection hidden">
 					<h2>TBA</h2>
-				</div>
+				</div> -->
 
 				<div id="models" class="subCategorySection hidden">
 					<div class="commentContainer">
@@ -518,12 +538,13 @@
 					<div class="post">
 						<span class="timestamp">June 2, 2024</span>
 	
-						<h1>
+						<div class="links">
 							<a href="https://gitea.warze.org/discordChannelMerger">
 								<img class="titleIcon" src="/icons/git.svg" alt="Discord Channel Merger on Gitea">
 							</a>
-							Discord&#8203;Channel&#8203;Merger
-						</h1>
+						</div>
+
+						<h1>Discord&#8203;Channel&#8203;Merger</h1>
 	
 						<p>Discord Channel Merger is a bot script that takes all messages from multiple channels and sends them in one using webhooks.</p>
 						<p>It's a great way to merge channels together without losing any contents.</p>
@@ -532,15 +553,16 @@
 					<div class="post">
 						<span class="timestamp">May 6, 2024</span>
 	
-						<h1>
+						<div class="links">
 							<a href="https://gitea.warze.org/discordAIChars">
 								<img class="titleIcon" src="/icons/git.svg" alt="Discord AI Characters on Gitea">
 							</a>
 							<a href="https://discord.warze.org">
 								<img class="titleIcon" src="/icons/discordwhite.svg" alt="Discord Server">
 							</a>
-							Discord&#8203;AI&#8203;Chars
-						</h1>
+						</div>
+
+						<h1>Discord&#8203;AI&#8203;Chars</h1>
 	
 						<p>Discord AI Chars is a bot that can switch between models and send AI-generated messages via webhooks. It uses the Ollama library to generate the AI responses.</p>
 						<p>Users in your server have the ability to create and customize their characters and even have them talk to each other.</p>
@@ -549,45 +571,50 @@
 					<div class="post">
 						<span class="timestamp">February 16, 2024</span>
 						
-						<h1>
-							<a href="https://gitea.warze.org/messageOfTheHour">
+						<div class="links">
+							<a href="https://gitea.warze.org/messageOfTheHour">	
 								<img class="titleIcon" src="/icons/git.svg" alt="Message of the hour on Gitea">
 							</a>
 							<a href="https://discord.warze.org">
 								<img class="titleIcon" src="/icons/discordwhite.svg" alt="Discord Server">
 							</a>
-							Message of the Hour
-						</h1>
+						</div>
+
+						<h1>Message of the Hour</h1>
+
 						<p>This bot sends a message in a designated channel every hour. The pool of messages can be from any channel.</p>
 					</div>
 	
 					<div class="post">
 						<span class="timestamp">February 3, 2024</span>
 						
-						<h1>
+						<div class="links">
 							<a href="https://gitea.warze.org/oneWordStoryBot">
 								<img class="titleIcon" src="/icons/git.svg" alt="One Word Story on Gitea">
 							</a>
 							<a href="https://discord.warze.org">
 								<img class="titleIcon" src="/icons/discordwhite.svg" alt="Discord Server">
 							</a>
-							One Word Story
-						</h1>
+						</div>
+
+						<h1>One Word Story</h1>
+
 						<p>This bot allows users to contribute to a story one word at a time. It's a fun way to create a story together.</p>
 					</div>
 	
 					<div class="post">
 						<span class="timestamp">January 27, 2024</span>
 	
-						<h1>
+						<div class="links">	
 							<a href="https://gitea.warze.org/discordOllama">
 								<img class="titleIcon" src="/icons/git.svg" alt="Discord Ollama on Gitea">
 							</a>
 							<a href="https://discord.warze.org">
 								<img class="titleIcon" src="/icons/discordwhite.svg" alt="Discord Server">
 							</a>
-							Ollama Chatbot
-						</h1>
+						</div>
+
+						<h1>Ollama Chatbot</h1>
 	
 						<p>This bot allows you to host and talk with LLMs right on Discord. It's very customizable and supports seeing tokens being generated in real time.</p>
 					</div>
@@ -595,15 +622,17 @@
 					<div class="post">
 						<span class="timestamp">August 30, 2023</span>
 						
-						<h1>
+						<div class="links">
 							<a href="https://gitea.warze.org/codeBotJS">
 								<img class="titleIcon" src="/icons/git.svg" alt="codeBotJS on Gitea">
 							</a>
 							<a href="https://discord.warze.org">
 								<img class="titleIcon" src="/icons/discordwhite.svg" alt="Discord Server">
 							</a>
-							Code with JavaScript
-						</h1>
+						</div>
+
+						<h1>Code with JavaScript</h1>
+
 						<p>Code Bot JS is a bot that allows you to run sandboxed JavaScript code in a Discord channel. It's a great way to test out code snippets and share them with others.</p>
 						<p>It also has APIs to create images and gifs with user input and even has a web interface at <a href="https://code.warze.org">code.warze.org</a>.</p>
 					</div>
@@ -611,15 +640,17 @@
 					<div class="post">
 						<span class="timestamp">April 28, 2023</span>
 						
-						<h1>
-							<a href="https://gitea.warze.org/warzeCasinoBot">
+						<div class="links">
+							<a href="https://gitea.warze.org/warzeCasinoBot">	
 								<img class="titleIcon" src="/icons/git.svg" alt="Warze's Casino Bot on Gitea">
 							</a>
 							<a href="https://discord.warze.org">
 								<img class="titleIcon" src="/icons/discordwhite.svg" alt="Discord Server">
 							</a>
-							Casino Games
-						</h1>
+						</div>
+						
+						<h1>Casino Games</h1>
+						
 						<p>Play games, earn currency, open chests and compete with others in a casino-themed bot for Discord.</p>
 						<p>It includes various games such as card games, connect 4 and coinflips.</p>
 					</div>
