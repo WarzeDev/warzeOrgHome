@@ -3,6 +3,16 @@ section[data-sectionid="posts"] {
 	margin-left: 20px;
 	border-left: 3px solid rgba(0, 0, 0, 0.295);
 
+	.post::before {
+		content: '';
+		position: absolute;
+		top: 60px;
+		right: 100%;
+		width: 30px;
+		height: 3px;
+		background-color: rgb(0, 0, 0, 0.295);
+	}
+
 	.year {
 		color: rgb(177, 12, 114);
 		position: relative;
@@ -31,16 +41,6 @@ section[data-sectionid="posts"] {
 	border-radius: 20px;
 	position: relative;
 	max-width: 1200px;
-
-	&::before {
-		content: '';
-		position: absolute;
-		top: 60px;
-		right: 100%;
-		width: 30px;
-		height: 3px;
-		background-color: rgb(0, 0, 0, 0.295);
-	}
 
 	.links {
 		top: 0;

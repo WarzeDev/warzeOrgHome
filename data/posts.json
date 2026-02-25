@@ -1,0 +1,178 @@
+[
+  {
+    "date": "Feb 16, 2026",
+    "title": "Releasing Ice Cream Parlor",
+    "links": {
+      "site": "https://icecream.warze.org",
+      "git": "https://gitea.warze.org/warzeCasinoBot"
+    },
+    "content": [
+      "A few years ago I worked on a prototype for an ice cream serving game.",
+      "Because I found it so fun and addicting, I picked it back up and released it on my site!"
+    ],
+    "cover": {"src": "/news/icecream.webp", "full": "/news/icecream.png"}
+  },
+  {
+    "date": "Jan 4, 2026",
+    "title": "Check out Plompy",
+    "links": {
+      "site": "https://home.warze.org/#mywork.models",
+      "git": ""
+    },
+    "content": [
+      "I've been making lots of custom models for Minecraft using Blockbench in my own time and for clients.",
+      "Plompy is my first custom mob that works using EMF and ETF and based off a real bat-eared fox"
+    ],
+    "cover": {"src": "/news/plompy.webp", "full": "/news/plompy.png"}
+  },
+  {
+    "date": "Apr 9, 2025",
+    "title": "My new Tool: BruteCraft",
+    "links": {
+      "site": "https://brutecraft.warze.org",
+      "git": "https://gitea.warze.org/brutecraft"
+    },
+    "content": [
+      "BruteCraft is a helpful tool for WynnCraft that helps with a pretty complicated system in the game: Crafting.",
+      "In WynnCraft, you can combine hundreds of different items to create gear and consumables with purposes ranging from combat, movement, survivability and more.",
+      "BruteCraft helps you figure out the best combination of items to yield the best result possible using a evolutionary algorithm."
+    ],
+    "cover": {"src": "/news/brutecraft.webp", "full": "/news/brutecraft.png"}
+  },
+  {
+    "date": "May 6, 2024",
+    "title": "My new App: BlanketJS",
+    "links": {
+      "site": "https://blanket.warze.org",
+      "git": "https://gitea.warze.org/blanketJs"
+    },
+    "content": [
+      "Listen to ambient sounds, mix them together and adjust their volumes.",
+      "Set it and forget it, this will increase your productivity, as it does mine."
+    ],
+    "cover": {"src": "/news/blanket.webp", "full": "/news/blanket.png"}
+  },
+  {
+    "date": "March 6, 2024",
+    "title": "A fresh coat of paint",
+    "links": {"site": "", "git": ""},
+    "content": [
+      "Warze.org just got a new landing page, you're seeing it right now!",
+      "This is more mobile friendly and improves SEO while simultaneously being flashy."
+    ]
+  },
+  {
+    "date": "February 3, 2024",
+    "title": "My new Puzzle Game: Lights on! 2",
+    "links": {
+      "site": "https://lightson2.warze.org",
+      "git": "https://gitea.warze.org/lightsOn2"
+    },
+    "content": [
+      "\"Lights On! 2\" is a sequel project I've made in just 3 days. All you have to do is place light bulbs throughout the room and make sure all of it is illuminated."
+    ],
+    "cover": {"src": "/news/lightson2.jpg", "video": "CsbU1txftRc"}
+  },
+  {
+    "date": "January 27, 2024",
+    "title": "Talk with AI on discord",
+    "links": {
+      "site": "https://discord.warze.org",
+      "git": "https://gitea.warze.org/discordOllama"
+    },
+    "content": [
+      "I created a discord bot that interfaces with the Ollama API, letting you host LLMs on your own PC."
+    ],
+    "cover": {"src": "/news/discordOllama.webp", "full": "/news/discordOllama.png"}
+  },
+  {
+    "date": "January 24, 2024",
+    "title": "My new Platformer Game: Ball 2",
+    "links": {
+      "site": "https://ball2.warze.org",
+      "git": "https://gitea.warze.org/ball2Remake"
+    },
+    "content": [
+      "Ball 2 is a pixel perfect recreation of a really old computer game from my childhood (Released ~2000).",
+      "Jump through 30 levels or create your own with the level editor!",
+      "Try out Ball 2 now, the code is on Gitea."
+    ],
+    "cover": {"src": "/news/ball2.jpg", "video": "72-gRQAK_SU"}
+  },
+  {
+    "date": "December 3, 2023",
+    "title": "Showing off an animated 3D book in CSS and JS",
+    "links": {
+      "site": "https://cssbook.warze.org",
+      "git": "https://gitea.warze.org/cssBook"
+    },
+    "content": [
+      "Here's a small project that I recorded myself creating. It's an animated book using beautiful CSS animations."
+    ],
+    "cover": {"src": "/news/cssbook.jpg", "video": "jkKjVyNrjco"}
+  },
+  {
+    "date": "November 22, 2023",
+    "title": "I rewrote WartOS in VueJS",
+    "links": {
+      "site": "https://wartos.warze.org",
+      "git": "https://gitea.warze.org/wartOS"
+    },
+    "content": [
+      "It now features a more streamlined design with more icons, a search system and rich animations."
+    ],
+    "cover": {"src": "/news/wartos.jpg", "video": "7U8Z840xhYc"}
+  },
+  {
+    "date": "November 14, 2023",
+    "title": "My new Puzzle Game: Lights on",
+    "links": {
+      "site": "https://lightson.warze.org",
+      "git": "https://gitea.warze.org/lightsOn"
+    },
+    "content": [
+      "A remake of a popular puzzle game with more fleshed out puzzle design.",
+      "Can you solve all 14 levels? Turn all the lights on, it shouldn't be that hard... right?",
+      "With each click, adjacent lamps toggle and you have to fiddle around to find the right pattern."
+    ],
+    "cover": {"src": "/news/lightson.jpg", "video": "KjQLdaKSoCA"}
+  },
+  {
+    "date": "November 6, 2023",
+    "title": "Practice Flags using my new game",
+    "links": {
+      "site": "https://flagquiz.warze.org",
+      "git": "https://gitea.warze.org/flagQuiz"
+    },
+    "content": [
+      "FlagQuiz is a game where you have to guess the flag of a country. It's a fun way to learn flags and their countries across the world."
+    ],
+    "cover": {"src": "/news/flagQuiz.png", "full": "/news/flagQuiz.png"}
+  },
+  {
+    "date": "November 4, 2023",
+    "title": "Create a Discord status out of emojis",
+    "links": {
+      "site": "https://discordstatus.warze.org",
+      "git": "https://gitea.warze.org/discordEmojiStatus"
+    },
+    "content": [
+      "A VueJS rewrite of a similar project I made in 2021.",
+      "A widely used tool shared across the social media platform Discord to create pixel art out of emoji and use it in messages, statuses, about me or wherever else."
+    ],
+    "cover": {"src": "/news/discordstatus.webp", "full": "/news/discordstatus.png"}
+  },
+  {
+    "date": "June 15, 2023",
+    "title": "I enhanced JollyWorld customization",
+    "links": {
+      "site": "https://jollyworld.app",
+      "git": ""
+    },
+    "content": [
+      "By developing a modding tool for JollyWorld, I allowed players to easily create their own custom characters.",
+      "It also shows a wide variety of community-created mods that can be downloaded with just a click. Most of which have amassed 10,000+ downloads."
+    ],
+    "cover": {"src": "/news/jollyworld.jpg", "video": "PoCfbDPtJig"}
+  }
+]

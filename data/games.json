@@ -1,0 +1,135 @@
+[
+  {
+    "category": "Popular Games",
+    "name": "gob",
+    "icon": "/games/gob.png",
+    "url": "https://gob.warze.org",
+    "pcOnly": false
+  },
+  {
+    "category": "Popular Games",
+    "name": "Jelly's Venture",
+    "icon": "/games/jelly.webp",
+    "url": "https://poki.com/en/g/jelly-venture",
+    "pcOnly": false
+  },
+  {
+    "category": "Popular Games",
+    "name": "Doomed.io",
+    "icon": "/games/doomed.png",
+    "url": "https://doomed.io",
+    "pcOnly": false
+  },
+  {
+    "category": "Popular Games",
+    "name": "JollyWorld",
+    "icon": "/games/jollyworld.png",
+    "url": "https://jollyworld.app",
+    "pcOnly": false
+  },
+  {
+    "category": "Popular Games",
+    "name": "Lights on! 2",
+    "icon": "/games/lightson2.png",
+    "url": "https://lightson2.warze.org",
+    "pcOnly": false
+  },
+  {
+    "category": "Popular Games",
+    "name": "Ice Cream",
+    "icon": "/games/icecream.png",
+    "url": "https://icecream.warze.org",
+    "pcOnly": false
+  },
+  {
+    "category": "Minigames",
+    "name": "Lights on!",
+    "icon": "/games/lightson.png",
+    "url": "https://lightson.warze.org",
+    "pcOnly": false
+  },
+  {
+    "category": "Minigames",
+    "name": "Hat Juggler",
+    "icon": "/games/casino1.png",
+    "url": "https://casino.warze.org/1",
+    "pcOnly": true
+  },
+  {
+    "category": "Minigames",
+    "name": "Picture Poker",
+    "icon": "/games/casino2.png",
+    "url": "https://casino.warze.org/2",
+    "pcOnly": false
+  },
+  {
+    "category": "Minigames",
+    "name": "Tower Jumper",
+    "icon": "/games/casino3.png",
+    "url": "https://casino.warze.org/3",
+    "pcOnly": true
+  },
+  {
+    "category": "Minigames",
+    "name": "Laibart",
+    "icon": "/games/laibart.png",
+    "url": "https://laibart.warze.org/",
+    "pcOnly": true
+  },
+  {
+    "category": "Minigames",
+    "name": "Parasite",
+    "icon": "/games/parasite.png",
+    "url": "https://parasite.warze.org/",
+    "pcOnly": false
+  },
+  {
+    "category": "Minigames",
+    "name": "Kubi Pets",
+    "icon": "/games/kubipets.png",
+    "url": "https://kubipets.warze.org",
+    "pcOnly": false
+  },
+  {
+    "category": "Minigames",
+    "name": "Happy Wheels",
+    "icon": "/games/happywheels.jpg",
+    "url": "https://happywheels.warze.org",
+    "pcOnly": true
+  },
+  {
+    "category": "Minigames",
+    "name": "Flag Quiz",
+    "icon": "/games/flagquiz.png",
+    "url": "https://flagquiz.warze.org/",
+    "pcOnly": false
+  },
+  {
+    "category": "Minigames",
+    "name": "React Idle",
+    "icon": "/games/react.png",
+    "url": "https://reactidle.warze.org/",
+    "pcOnly": false
+  },
+  {
+    "category": "Game Remakes",
+    "name": "Pushy",
+    "icon": "/games/pushy.png",
+    "url": "https://pushy.warze.org",
+    "pcOnly": false
+  },
+  {
+    "category": "Game Remakes",
+    "name": "Snake",
+    "icon": "/games/snake.png",
+    "url": "https://snake.warze.org",
+    "pcOnly": true
+  },
+  {
+    "category": "Game Remakes",
+    "name": "Ball 2",
+    "icon": "/games/ball2.png",
+    "url": "https://ball2.warze.org",
+    "pcOnly": false
+  }
+]

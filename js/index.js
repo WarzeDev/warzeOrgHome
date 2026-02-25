@@ -61,6 +61,8 @@ function selectCategory(category) {
 		populateGallery();
 	} else if (category === 'testimonials') {
 		populateTestimonials();
+	} else if (category === 'mywork') {
+		setupGames();
 	}
 }
 
@@ -166,6 +168,8 @@ document.querySelectorAll('.subCategory').forEach((category) => {
 
 		if (newCategory === 'models') {
 			setupModelImages();
+		} else if (newCategory === 'games') {
+			setupGames();
 		}
 	});
 });
