@@ -57,13 +57,7 @@ function selectCategory(category) {
 		earth.style.filter = `hue-rotate(${hueShift}deg)`;
 	}
 
-	if (category === 'gallery') {
-		populateGallery();
-	} else if (category === 'testimonials') {
-		populateTestimonials();
-	} else if (category === 'mywork') {
-		setupGames();
-	}
+	categoryPopulator(category);
 }
 
 function moveUnderlineToElement() {
@@ -99,7 +93,20 @@ document.querySelectorAll('.category').forEach((category) => {
 
 		hideMobileNavBarDrawer();
 	});
+	category.addEventListener('mouseenter', () => {
+		categoryPopulator(category.dataset.category);
+	});
 });
+
+function categoryPopulator(category) {
+	const categorySetups = {
+		'mywork': setupGames,
+		'gallery': populateGallery,
+		'testimonials': populateTestimonials,
+	};
+	const c = categorySetups[category];
+	if (c) c();
+}
 
 // Make thumbnails turn into youtube embeds on click
 document.querySelectorAll('.thumb').forEach((thumbnail) => {

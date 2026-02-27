@@ -82,6 +82,28 @@
 			color: #eba3a3;
 			text-align: left;
 		}
+
+		&:hover img {
+			animation: bounce 0.6s ease-in-out;
+		}
+	}
+}
+
+@keyframes bounce {
+	0% {
+		transform: translateY(0px);
+	}
+	30% {
+		transform: translateY(-5px) scale(0.9, 1.1);
+	}
+	60% {
+		transform: translateY(2px) scale(1.2, 0.8);
+	}
+	85% {
+		transform: translateY(-1px) scale(0.9, 1.1);
+	}
+	100% {
+		transform: translateY(0px);
 	}
 }
 
@@ -106,7 +128,7 @@
 .heroPost {
 	border-radius: 20px;
 	padding: 8px;
-	background: linear-gradient(-45deg, var(--highlight) 0%, rgba(0, 0, 0, 0.5) 50%);
+	background: linear-gradient(-45deg, var(--highlight) 0%, rgba(0, 0, 0, 0.8) 50%);
 	display: flex;
 	text-decoration: none;
 	box-shadow: inset 0 0 10px 5px rgba(0, 0, 0, 0.5);
@@ -117,18 +139,6 @@
 	
 	.description {
 		color: rgb(140, 140, 140);
-	}
-
-	::before {
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background-color: rgba(0, 0, 0, 0.3);
-		z-index: -1;
-		border-radius: 20px;
 	}
 	
 	.heroVideoContainer {

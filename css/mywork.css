@@ -18,19 +18,27 @@
 		h2 {
 			line-height: 14px;
 			color: var(--gameline);
-		}
+			cursor: pointer;
+			position: relative;
 
-		h2::before {
-			content: "";
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 14px;
-			height: 14px;
-			background-color: var(--game);
-			border-radius: 50%;
-			transform: translateX(-8.5px);
-			outline: 3px solid var(--gameline);
+			&::before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: -28.5px;
+				width: 14px;
+				height: 14px;
+				background-color: var(--game);
+				border-radius: 50%;
+				outline: 3px solid var(--gameline);
+			}
+
+			&:hover {
+				animation: dotBounce 0.5s ease-in-out;
+			}
+			&:hover::before {
+				animation: dotBounce2 0.5s ease-in-out;
+			}
 		}
 	}
 }
