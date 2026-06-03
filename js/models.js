@@ -21,12 +21,16 @@ function setupModelImages() {
 		'Plompy',
 		'Pumpkin Totem',
 		'Red Spear',
+		'Seb Tophat',
+		'Sebtral Bow',
+		'Sebtral Relik',
+		'Sebtral Wand',
 		'Squidward Totem',
 		'Tinee Horns',
 		'Tinee Scythe',
 		'Tinee Stave',
 		'Wingul Hat',
-		'Winter Hood'
+		'Winter Hood',
 	];
 
     const modelComments = {
@@ -38,7 +42,8 @@ function setupModelImages() {
         'Red Spear': 'Reskin',
         'Tinee Stave': 'Edit',
         'Wingul Hat': 'Edit',
-        'Winter Hood': 'Reskin'
+        'Winter Hood': 'Reskin',
+		'Seb Tophat': 'Reskin',
     };
 
     const commentColors = {
