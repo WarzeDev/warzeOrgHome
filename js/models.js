@@ -24,6 +24,7 @@ function setupModelImages() {
 		'Seb Tophat',
 		'Sebtral Bow',
 		'Sebtral Relik',
+		'Sebtral Spear',
 		'Sebtral Wand',
 		'Squidward Totem',
 		'Tinee Horns',
