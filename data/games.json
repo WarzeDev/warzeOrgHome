@@ -1,14 +1,6 @@
 [
   {
     "category": "Popular Games",
-    "name": "gob",
-    "icon": "/games/gob.png",
-    "url": "https://gob.warze.org",
-    "pcOnly": false,
-    "color": "#ff5e5b"
-  },
-  {
-    "category": "Popular Games",
     "name": "Jelly's Venture",
     "icon": "/games/jelly.webp",
     "url": "https://poki.com/en/g/jelly-venture",
@@ -30,6 +22,14 @@
     "url": "https://jollyworld.app",
     "pcOnly": false,
     "color": "#ffffff"
+  },
+  {
+    "category": "Popular Games",
+    "name": "gob",
+    "icon": "/games/gob.png",
+    "url": "https://gob.warze.org",
+    "pcOnly": false,
+    "color": "#ff5e5b"
   },
   {
     "category": "Popular Games",
