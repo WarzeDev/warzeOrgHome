@@ -39,6 +39,7 @@ const gallery = {
 		'warzesadodeer2.jpg',
 		'warzesadodeer3.jpg',
 		'warzepngtuber1.png',
+		'warzesadodeerdupin.png',
 		'warzesadodeerbed.jpg',
 		'warzesadodeermatch1.jpg',
 		'warzesadodeermatch4.jpg',
