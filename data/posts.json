@@ -3,8 +3,7 @@
     "date": "Feb 16, 2026",
     "title": "Releasing Ice Cream Parlor",
     "links": {
-      "site": "https://icecream.warze.org",
-      "git": "https://gitea.warze.org/warzeCasinoBot"
+      "site": "https://icecream.warze.org"
     },
     "content": [
       "A few years ago I worked on a prototype for an ice cream serving game.",
@@ -30,7 +29,7 @@
     "title": "My new Tool: BruteCraft",
     "links": {
       "site": "https://brutecraft.warze.org",
-      "git": "https://gitea.warze.org/brutecraft"
+      "git": "https://github.com/WarzeDev/brutecraft"
     },
     "content": [
       "BruteCraft is a helpful tool for WynnCraft that helps with a pretty complicated system in the game: Crafting.",
@@ -44,7 +43,7 @@
     "title": "My new App: BlanketJS",
     "links": {
       "site": "https://blanket.warze.org",
-      "git": "https://gitea.warze.org/blanketJs"
+      "git": "https://github.com/WarzeDev/blanketJs"
     },
     "content": [
       "Listen to ambient sounds, mix them together and adjust their volumes.",
@@ -66,7 +65,7 @@
     "title": "My new Puzzle Game: Lights on! 2",
     "links": {
       "site": "https://lightson2.warze.org",
-      "git": "https://gitea.warze.org/lightsOn2"
+      "git": "https://github.com/WarzeDev/lightsOn2"
     },
     "content": [
       "\"Lights On! 2\" is a sequel project I've made in just 3 days. All you have to do is place light bulbs throughout the room and make sure all of it is illuminated."
@@ -78,7 +77,7 @@
     "title": "Talk with AI on discord",
     "links": {
       "site": "https://discord.warze.org",
-      "git": "https://gitea.warze.org/discordOllama"
+      "git": "https://github.com/WarzeDev/discordOllama"
     },
     "content": [
       "I created a discord bot that interfaces with the Ollama API, letting you host LLMs on your own PC."
@@ -90,7 +89,7 @@
     "title": "My new Platformer Game: Ball 2",
     "links": {
       "site": "https://ball2.warze.org",
-      "git": "https://gitea.warze.org/ball2Remake"
+      "git": "https://github.com/WarzeDev/ball2Remake"
     },
     "content": [
       "Ball 2 is a pixel perfect recreation of a really old computer game from my childhood (Released ~2000).",
@@ -104,7 +103,7 @@
     "title": "Showing off an animated 3D book in CSS and JS",
     "links": {
       "site": "https://cssbook.warze.org",
-      "git": "https://gitea.warze.org/cssBook"
+      "git": "https://github.com/WarzeDev/cssBook"
     },
     "content": [
       "Here's a small project that I recorded myself creating. It's an animated book using beautiful CSS animations."
@@ -116,7 +115,7 @@
     "title": "I rewrote WartOS in VueJS",
     "links": {
       "site": "https://wartos.warze.org",
-      "git": "https://gitea.warze.org/wartOS"
+      "git": "https://github.com/WarzeDev/wartOS"
     },
     "content": [
       "It now features a more streamlined design with more icons, a search system and rich animations."
@@ -128,7 +127,7 @@
     "title": "My new Puzzle Game: Lights on",
     "links": {
       "site": "https://lightson.warze.org",
-      "git": "https://gitea.warze.org/lightsOn"
+      "git": "https://github.com/WarzeDev/lightsOn"
     },
     "content": [
       "A remake of a popular puzzle game with more fleshed out puzzle design.",
@@ -142,7 +141,7 @@
     "title": "Practice Flags using my new game",
     "links": {
       "site": "https://flagquiz.warze.org",
-      "git": "https://gitea.warze.org/flagQuiz"
+      "git": "https://github.com/WarzeDev/flagQuiz"
     },
     "content": [
       "FlagQuiz is a game where you have to guess the flag of a country. It's a fun way to learn flags and their countries across the world."
@@ -154,7 +153,7 @@
     "title": "Create a Discord status out of emojis",
     "links": {
       "site": "https://discordstatus.warze.org",
-      "git": "https://gitea.warze.org/discordEmojiStatus"
+      "git": "https://github.com/WarzeDev/discordEmojiStatus"
     },
     "content": [
       "A VueJS rewrite of a similar project I made in 2021.",
